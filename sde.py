@@ -1,7 +1,23 @@
 import numpy as np
 import numpy.linalg as la
 import numpy.matlib as mat
-import sympy
+
+def sde(x0, t0, b, sigma, N, h):
+    t = np.arange(t0, t0+N*h, h)
+    #    t.shape = (t.shape[0], 1)
+    #    N = t.size
+    x0 = np.atleast_1d(x0)
+    d = x0.shape[-1]
+    dB = np.mat(np.random.normal(0, np.sqrt(h), (N, d)))
+    dB = np.matlib.zeros((N, d))
+    dB[0, :] = 0
+    X = mat.zeros((N, d))
+    X[:, 0] = x0
+    for i in range(0, N-1):
+        X[i+1, :] = X[i, :] + h*b(t[i], X[i, :]) + sigma*dB[i+1, :]
+    B = np.cumsum(dB, axis=0)
+    return (X, B, t)
+
 
 def proj(sigma, z):
 #    return 0
@@ -41,30 +57,3 @@ def sde_coupled(x0, y0, t0, b, sigma, N, h, delta=None):
     B = np.cumsum(dB, axis=1)
     Bhat = np.cumsum(dBhat, axis=1)
     return (X, Y, B, Bhat, t.T)
-
-def grad(V):
-    V = sympy.sympify(V)
-    t = sympy.symbols('t')
-    syms = sorted(V.free_symbols, key=sympy.Symbol.sort_key)
-    X = sympy.MatrixSymbol('_X', len(syms), 1)
-    subs = [(s, X[i, 0]) for (i, s) in enumerate(syms)]
-    dVs = [sympy.diff(V, s).subs(subs) for s in syms]
-    return sympy.lambdify((t, X), sympy.Matrix(dVs), 'numpy', dummify=False)
-#    return lambdastr((t, X), sympy.Matrix(dVs), dummify=False)
-    
-def ou_coupled(x0, y0, kappa, sigma, h, dim):
-    dB = np.mat(np.random.normal(0, h, dim))
-    dB[:, 0] = 0
-    X = mat.zeros(dim)
-    X[:, 0] = x0
-    Y = mat.zeros(dim)
-    Y[:, 0] = y0
-    Id = mat.eye(dim[0])
-    dBhat = mat.zeros(dim)
-    for i in range(0, dim[1]-1):
-        dBhat[:, i+1] = (Id - 2*proj(sigma, X[:, i] - Y[:, i])) * dB[:, i+1]
-        X[:, i+1] = X[:, i] - h*kappa*X[:, i] + sigma * dB[:, i+1]
-        Y[:, i+1] = Y[:, i] - h*kappa*Y[:, i] + sigma * dBhat[:, i+1]
-    B = np.cumsum(dB, axis=1)
-    Bhat = np.cumsum(dBhat, axis=1)
-    return (X, Y, B, Bhat)
