@@ -1,9 +1,10 @@
-// clang++ -std=c++14 -O3 -ffast-math -dynamiclib -o sde_eigen.dylib sde_eigen.cpp -I eigen
+// clang++ -std=c++14 -g -O3 -ffast-math -dynamiclib -o sde_eigen.dylib sde_eigen.cpp -I eigen
 // clang++ -std=c++14 -O3 -ffast-math -o sde_eigen sde_eigen.cpp -I eigen
 
 
 #include <iostream>
 #include <cstdlib>
+#include <cfloat>
 #include <string>
 #include <random>
 #include <Eigen/Dense>
@@ -58,6 +59,7 @@ public:
 	const float twopi = 2 * M_PI;
 	const float mtwo = -2.0;
 	float2 u = next_float2();
+	u[0] += FLT_EPSILON;
 	float a = sqrt(mtwo * log(u[0]));
 	float2 r;
 	r[0] = sin(twopi*u[1]);
