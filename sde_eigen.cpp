@@ -1,4 +1,4 @@
-// clang++ -std=c++14 -g -O3 -ffast-math -dynamiclib -o sde_eigen.dylib sde_eigen.cpp -I eigen
+// clang++ -std=c++14 -g -O3 -ffast-math -march=native -dynamiclib -o sde_eigen.dylib sde_eigen.cpp -I eigen
 // clang++ -std=c++14 -O3 -ffast-math -o sde_eigen sde_eigen.cpp -I eigen
 
 
@@ -15,15 +15,7 @@ typedef float float2 __attribute__ ((ext_vector_type(2)));
 typedef uint32_t uint32_2 __attribute__ ((ext_vector_type(2)));
 typedef uint64_t uint64_1 __attribute__ ((ext_vector_type(1)));
 
-typedef struct { float kappa_X, kappa_Y, invepsilon; } params_t;
-
-extern "C"
-void sde_eigen(params_t *params,
-	       unsigned long omega_X, unsigned long omega_Y,
-	       float h, unsigned long N, float t0,
-	       unsigned long dimX, unsigned long dimY,
-	       float *x0_p, float *y0_p,
-	       float *X_p, float *Y_p);
+typedef struct { float kappa_X, kappa_Y, sigma_X, sigma_Y, invepsilon; } params_t;
 
 // xoroshiro128+ PRNG
 
@@ -87,32 +79,46 @@ private:
     }
 };
 
-template<Index n> using Vecf = Matrix<float, n, 1>;
+namespace dynamics {
+struct Base {
+    template<typename V>
+    static V b_Y(params_t params, float t, V x, V y) {
+        return -params.kappa_Y*(y - x);
+    }
 
-template<typename V>
-V b_X(params_t params, float t, V x, V y) {
-    return -params.kappa_X*(x - y);
-}
-
-template<typename V>
-V b_Y(params_t params, float t, V x, V y) {
-    return -params.kappa_Y*(y - x);
-}
-
-template<typename V>
-float sigma_X(params_t params, float t, V x, V y) {
+    template<typename V>
+    static float sigma_X(params_t params, float t, V x, V y) {
 //    return M::Identity; //(x.size(), x.size())/sqrt(params.epsilon);
-    return 1;
-}
+        return params.sigma_X;
+    }
 
-template<typename V>
-float sigma_Y(params_t params, float t, V x, V y) {
+    template<typename V>
+    static float sigma_Y(params_t params, float t, V x, V y) {
 //    return M::Identity; //(y.size(), y.size());
-    return 1;
+        return params.sigma_Y;
+    }
+};
+struct OU : Base {
+    template<typename V>
+    static V b_X(params_t params, float t, V x, V y) {
+        return -params.kappa_X*(x - y);
+    }
+};
+
+struct DoubleWell : Base {
+    template<typename V>
+    static V b_X(params_t params, float t, V x, V y) {
+        const float deltaE = params.kappa_X;
+        const float r0 = 2;
+        const float k = deltaE / (r0*r0*r0*r0);
+        const float a = 2 * r0*r0;
+        const float x1 = x - y;
+        return -k*2*x1*(2*x1*x1 - a);
+    }
+};
 }
 
-using Matf1 = Matrix<float, 1, 1>;
-
+template<typename Dynamics>
 void sde_eigen(params_t *params_p,
 	       unsigned long omega_X, unsigned long omega_Y,
 	       float h, unsigned long N, float t0,
@@ -142,10 +148,10 @@ void sde_eigen(params_t *params_p,
     Y.col(0) = y0;
     for(size_t k=0; k < N-1; k++) {
 	const float t = k*h;
-	auto dx = b_X(params, t, x, y);
-	auto dy = b_Y(params, t, x, y);
-	float sx = sigma_X(params, t, x, y);
-	float sy = sigma_Y(params, t, x, y);
+	auto dx = Dynamics::b_X(params, t, x, y);
+	auto dy = Dynamics::b_Y(params, t, x, y);
+	float sx = Dynamics::sigma_X(params, t, x, y);
+	float sy = Dynamics::sigma_Y(params, t, x, y);
 	float2 dB_X = Xgen.boxmuller2();
 	float2 dB_Y = Ygen.boxmuller2();
 	// x += dx * h + sx * Xgen.gaussVector(dimX) * sqh;
@@ -159,19 +165,24 @@ void sde_eigen(params_t *params_p,
     }
 }
 
-int main(int argc, char **argv)
+extern "C" void sde_eigen_ou(params_t *params_p,
+                             unsigned long omega_X, unsigned long omega_Y,
+                             float h, unsigned long N, float t0,
+                             unsigned long dimX, unsigned long dimY,
+                             float *x0_p, float *y0_p,
+                             float *X_p, float *Y_p)
 {
-    Xoroshiro rng;
-    uint64_t s0 = std::strtoull(argv[1], 0, 10);
-    uint64_t s1 = std::strtoull(argv[2], 0, 10);
-    size_t N = std::strtoull(argv[3], 0, 10);
-    rng.s[0] = s0;
-    rng.s[1] = s1;
-    for(size_t i=0; i < N; i++) {
-	float2 g = rng.boxmuller2();
-	std::cout << g[0] << " " << g[1] << " ";
-//	uint64_t u = rng.next();
-//	std::cout << u << " ";
-    }
-    std::cout << "\n";
+    sde_eigen<dynamics::OU>(params_p, omega_X, omega_Y, h, N, t0, dimX, dimY, x0_p, y0_p, X_p, Y_p);
 }
+
+extern "C" void sde_eigen_doublewell(params_t *params_p,
+                             unsigned long omega_X, unsigned long omega_Y,
+                             float h, unsigned long N, float t0,
+                             unsigned long dimX, unsigned long dimY,
+                             float *x0_p, float *y0_p,
+                             float *X_p, float *Y_p)
+{
+    sde_eigen<dynamics::DoubleWell>(params_p, omega_X, omega_Y, h, N, t0, dimX, dimY, x0_p, y0_p, X_p, Y_p);
+}
+
+// constexpr auto sde_eigen_ou = sde_eigen<dynamics::OU>;
