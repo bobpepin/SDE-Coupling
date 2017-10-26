@@ -1,0 +1,3511 @@
+<ParaView>
+  <ServerManagerState version="5.4.1">
+    <Proxy group="animation" type="AnimationScene" id="263" servers="16">
+      <Property name="AnimationTime" id="263.AnimationTime" number_of_elements="1">
+        <Element index="0" value="0"/>
+      </Property>
+      <Property name="Cues" id="263.Cues" number_of_elements="1">
+        <Proxy value="265"/>
+        <Domain name="groups" id="263.Cues.groups"/>
+      </Property>
+      <Property name="Duration" id="263.Duration" number_of_elements="1">
+        <Element index="0" value="10"/>
+      </Property>
+      <Property name="EndTime" id="263.EndTime" number_of_elements="1">
+        <Element index="0" value="1"/>
+      </Property>
+      <Property name="FramesPerTimestep" id="263.FramesPerTimestep" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="range" id="263.FramesPerTimestep.range"/>
+      </Property>
+      <Property name="GoToFirst" id="263.GoToFirst"/>
+      <Property name="GoToLast" id="263.GoToLast"/>
+      <Property name="GoToNext" id="263.GoToNext"/>
+      <Property name="GoToPrevious" id="263.GoToPrevious"/>
+      <Property name="LockEndTime" id="263.LockEndTime" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="263.LockEndTime.bool"/>
+      </Property>
+      <Property name="LockStartTime" id="263.LockStartTime" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="263.LockStartTime.bool"/>
+      </Property>
+      <Property name="Loop" id="263.Loop" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="263.Loop.bool"/>
+      </Property>
+      <Property name="NumberOfFrames" id="263.NumberOfFrames" number_of_elements="1">
+        <Element index="0" value="10"/>
+        <Domain name="range" id="263.NumberOfFrames.range"/>
+      </Property>
+      <Property name="Play" id="263.Play"/>
+      <Property name="PlayMode" id="263.PlayMode" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="enum" id="263.PlayMode.enum">
+          <Entry value="0" text="Sequence"/>
+          <Entry value="1" text="Real Time"/>
+          <Entry value="2" text="Snap To TimeSteps"/>
+        </Domain>
+      </Property>
+      <Property name="StartTime" id="263.StartTime" number_of_elements="1">
+        <Element index="0" value="0"/>
+      </Property>
+      <Property name="Stop" id="263.Stop"/>
+      <Property name="TimeKeeper" id="263.TimeKeeper" number_of_elements="1">
+        <Proxy value="259"/>
+      </Property>
+      <Property name="ViewModules" id="263.ViewModules" number_of_elements="1">
+        <Proxy value="4923"/>
+        <Domain name="groups" id="263.ViewModules.groups"/>
+      </Property>
+    </Proxy>
+    <Proxy group="animation" type="TimeAnimationCue" id="265" servers="16">
+      <Property name="AnimatedDomainName" id="265.AnimatedDomainName" number_of_elements="1">
+        <Element index="0" value=""/>
+      </Property>
+      <Property name="AnimatedElement" id="265.AnimatedElement" number_of_elements="1">
+        <Element index="0" value="0"/>
+      </Property>
+      <Property name="AnimatedPropertyName" id="265.AnimatedPropertyName" number_of_elements="1">
+        <Element index="0" value="Time"/>
+      </Property>
+      <Property name="AnimatedProxy" id="265.AnimatedProxy" number_of_elements="1">
+        <Proxy value="259"/>
+        <Domain name="groups" id="265.AnimatedProxy.groups"/>
+      </Property>
+      <Property name="Enabled" id="265.Enabled" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="265.Enabled.bool"/>
+      </Property>
+      <Property name="EndTime" id="265.EndTime" number_of_elements="1">
+        <Element index="0" value="1"/>
+      </Property>
+      <Property name="KeyFrames" id="265.KeyFrames">
+        <Domain name="groups" id="265.KeyFrames.groups"/>
+      </Property>
+      <Property name="LastAddedKeyFrameIndex" id="265.LastAddedKeyFrameIndex"/>
+      <Property name="StartTime" id="265.StartTime" number_of_elements="1">
+        <Element index="0" value="0"/>
+      </Property>
+      <Property name="TimeMode" id="265.TimeMode" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="enum" id="265.TimeMode.enum">
+          <Entry value="0" text="Normalized"/>
+          <Entry value="1" text="Relative"/>
+        </Domain>
+      </Property>
+      <Property name="UseAnimationTime" id="265.UseAnimationTime" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="265.UseAnimationTime.bool"/>
+      </Property>
+    </Proxy>
+    <Proxy group="misc" type="ViewLayout" id="4921" servers="16">
+      <Property name="SeparatorColor" id="4921.SeparatorColor" number_of_elements="3">
+        <Element index="0" value="0.937"/>
+        <Element index="1" value="0.922"/>
+        <Element index="2" value="0.906"/>
+        <Domain name="range" id="4921.SeparatorColor.range"/>
+      </Property>
+      <Property name="SeparatorWidth" id="4921.SeparatorWidth" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="range" id="4921.SeparatorWidth.range"/>
+      </Property>
+      <Property name="ShowWindowDecorations" id="4921.ShowWindowDecorations" number_of_elements="1">
+        <Element index="0" value="1"/>
+      </Property>
+      <Layout number_of_elements="1">
+        <Item direction="0" fraction="0.5" view="4923"/>
+      </Layout>
+    </Proxy>
+    <Proxy group="lookup_tables" type="PVLookupTable" id="4699" servers="21">
+      <Property name="AboveRangeColor" id="4699.AboveRangeColor" number_of_elements="3">
+        <Element index="0" value="0.5"/>
+        <Element index="1" value="0.5"/>
+        <Element index="2" value="0.5"/>
+      </Property>
+      <Property name="ActiveAnnotatedValues" id="4699.ActiveAnnotatedValues" number_of_elements="2">
+        <Element index="0" value="0"/>
+        <Element index="1" value="1"/>
+      </Property>
+      <Property name="AllowDuplicateScalars" id="4699.AllowDuplicateScalars" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="4699.AllowDuplicateScalars.bool"/>
+      </Property>
+      <Property name="Annotations" id="4699.Annotations" number_of_elements="24">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="1"/>
+        <Element index="3" value="1"/>
+        <Element index="4" value="2"/>
+        <Element index="5" value="2"/>
+        <Element index="6" value="3"/>
+        <Element index="7" value="3"/>
+        <Element index="8" value="4"/>
+        <Element index="9" value="4"/>
+        <Element index="10" value="5"/>
+        <Element index="11" value="5"/>
+        <Element index="12" value="6"/>
+        <Element index="13" value="6"/>
+        <Element index="14" value="7"/>
+        <Element index="15" value="7"/>
+        <Element index="16" value="8"/>
+        <Element index="17" value="8"/>
+        <Element index="18" value="9"/>
+        <Element index="19" value="9"/>
+        <Element index="20" value="10"/>
+        <Element index="21" value="10"/>
+        <Element index="22" value="11"/>
+        <Element index="23" value="11"/>
+      </Property>
+      <Property name="AutomaticRescaleRangeMode" id="4699.AutomaticRescaleRangeMode" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="enum" id="4699.AutomaticRescaleRangeMode.enum">
+          <Entry value="-1" text="Never"/>
+          <Entry value="0" text="Grow and update on &#x27;Apply&#x27;"/>
+          <Entry value="1" text="Grow and update every timestep"/>
+          <Entry value="3" text="Clamp and update every timestep"/>
+        </Domain>
+      </Property>
+      <Property name="BelowRangeColor" id="4699.BelowRangeColor" number_of_elements="3">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+      </Property>
+      <Property name="Build" id="4699.Build"/>
+      <Property name="ColorSpace" id="4699.ColorSpace" number_of_elements="1">
+        <Element index="0" value="3"/>
+        <Domain name="enum" id="4699.ColorSpace.enum">
+          <Entry value="0" text="RGB"/>
+          <Entry value="1" text="HSV"/>
+          <Entry value="2" text="Lab"/>
+          <Entry value="3" text="Diverging"/>
+        </Domain>
+      </Property>
+      <Property name="Discretize" id="4699.Discretize" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="4699.Discretize.bool"/>
+      </Property>
+      <Property name="EnableOpacityMapping" id="4699.EnableOpacityMapping" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4699.EnableOpacityMapping.bool"/>
+      </Property>
+      <Property name="HSVWrap" id="4699.HSVWrap" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4699.HSVWrap.bool"/>
+      </Property>
+      <Property name="IndexedColors" id="4699.IndexedColors" number_of_elements="36">
+        <Element index="0" value="1"/>
+        <Element index="1" value="1"/>
+        <Element index="2" value="1"/>
+        <Element index="3" value="1"/>
+        <Element index="4" value="0"/>
+        <Element index="5" value="0"/>
+        <Element index="6" value="0"/>
+        <Element index="7" value="1"/>
+        <Element index="8" value="0"/>
+        <Element index="9" value="0"/>
+        <Element index="10" value="0"/>
+        <Element index="11" value="1"/>
+        <Element index="12" value="1"/>
+        <Element index="13" value="1"/>
+        <Element index="14" value="0"/>
+        <Element index="15" value="1"/>
+        <Element index="16" value="0"/>
+        <Element index="17" value="1"/>
+        <Element index="18" value="0"/>
+        <Element index="19" value="1"/>
+        <Element index="20" value="1"/>
+        <Element index="21" value="0.63"/>
+        <Element index="22" value="0.63"/>
+        <Element index="23" value="1"/>
+        <Element index="24" value="0.67"/>
+        <Element index="25" value="0.5"/>
+        <Element index="26" value="0.33"/>
+        <Element index="27" value="1"/>
+        <Element index="28" value="0.5"/>
+        <Element index="29" value="0.75"/>
+        <Element index="30" value="0.53"/>
+        <Element index="31" value="0.35"/>
+        <Element index="32" value="0.7"/>
+        <Element index="33" value="1"/>
+        <Element index="34" value="0.75"/>
+        <Element index="35" value="0.5"/>
+      </Property>
+      <Property name="IndexedLookup" id="4699.IndexedLookup" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="4699.IndexedLookup.bool"/>
+      </Property>
+      <Property name="NanColor" id="4699.NanColor" number_of_elements="3">
+        <Element index="0" value="1"/>
+        <Element index="1" value="1"/>
+        <Element index="2" value="0"/>
+      </Property>
+      <Property name="NumberOfTableValues" id="4699.NumberOfTableValues" number_of_elements="1">
+        <Element index="0" value="256"/>
+        <Domain name="range" id="4699.NumberOfTableValues.range"/>
+      </Property>
+      <Property name="RGBPoints" id="4699.RGBPoints" number_of_elements="12">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0.231373"/>
+        <Element index="2" value="0.298039"/>
+        <Element index="3" value="0.752941"/>
+        <Element index="4" value="0.5"/>
+        <Element index="5" value="0.865003"/>
+        <Element index="6" value="0.865003"/>
+        <Element index="7" value="0.865003"/>
+        <Element index="8" value="1"/>
+        <Element index="9" value="0.705882"/>
+        <Element index="10" value="0.0156863"/>
+        <Element index="11" value="0.14902"/>
+      </Property>
+      <Property name="RescaleOnVisibilityChange" id="4699.RescaleOnVisibilityChange" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4699.RescaleOnVisibilityChange.bool"/>
+      </Property>
+      <Property name="ScalarOpacityFunction" id="4699.ScalarOpacityFunction" number_of_elements="1">
+        <Proxy value="4700"/>
+      </Property>
+      <Property name="ScalarRangeInitialized" id="4699.ScalarRangeInitialized" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4699.ScalarRangeInitialized.bool"/>
+      </Property>
+      <Property name="ShowIndexedColorActiveValues" id="4699.ShowIndexedColorActiveValues" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4699.ShowIndexedColorActiveValues.bool"/>
+      </Property>
+      <Property name="UseAboveRangeColor" id="4699.UseAboveRangeColor" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4699.UseAboveRangeColor.bool"/>
+      </Property>
+      <Property name="UseBelowRangeColor" id="4699.UseBelowRangeColor" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4699.UseBelowRangeColor.bool"/>
+      </Property>
+      <Property name="UseLogScale" id="4699.UseLogScale" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4699.UseLogScale.bool"/>
+      </Property>
+      <Property name="VectorComponent" id="4699.VectorComponent" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="range" id="4699.VectorComponent.range"/>
+      </Property>
+      <Property name="VectorMode" id="4699.VectorMode" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="enum" id="4699.VectorMode.enum">
+          <Entry value="0" text="Magnitude"/>
+          <Entry value="1" text="Component"/>
+        </Domain>
+      </Property>
+    </Proxy>
+    <Proxy group="piecewise_functions" type="PiecewiseFunction" id="4700" servers="21">
+      <Property name="AllowDuplicateScalars" id="4700.AllowDuplicateScalars" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="4700.AllowDuplicateScalars.bool"/>
+      </Property>
+      <Property name="Points" id="4700.Points" number_of_elements="8">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0.5"/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="1"/>
+        <Element index="5" value="1"/>
+        <Element index="6" value="0.5"/>
+        <Element index="7" value="0"/>
+      </Property>
+      <Property name="ScalarRangeInitialized" id="4700.ScalarRangeInitialized" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4700.ScalarRangeInitialized.bool"/>
+      </Property>
+    </Proxy>
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="4496" servers="16">
+      <Property name="Source" id="4496.Source" number_of_elements="1">
+        <Proxy value="4485"/>
+      </Property>
+    </Proxy>
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="4718" servers="16">
+      <Property name="Source" id="4718.Source" number_of_elements="1">
+        <Proxy value="4707"/>
+      </Property>
+    </Proxy>
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="5006" servers="16">
+      <Property name="Source" id="5006.Source" number_of_elements="1">
+        <Proxy value="4995"/>
+      </Property>
+    </Proxy>
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="5018" servers="16">
+      <Property name="Source" id="5018.Source" number_of_elements="1">
+        <Proxy value="5007"/>
+      </Property>
+    </Proxy>
+    <Proxy group="representations" type="XYChartRepresentation" id="4957" servers="21">
+      <Property name="AttributeType" id="4957.AttributeType" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="enum" id="4957.AttributeType.enum">
+          <Entry value="0" text="Point Data"/>
+          <Entry value="1" text="Cell Data"/>
+          <Entry value="2" text="Field Data"/>
+          <Entry value="4" text="Vertex Data"/>
+          <Entry value="5" text="Edge Data"/>
+          <Entry value="6" text="Row Data"/>
+        </Domain>
+      </Property>
+      <Property name="Color" id="4957.Color" number_of_elements="3">
+        <Element index="0" value="1"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="1"/>
+        <Domain name="range" id="4957.Color.range"/>
+      </Property>
+      <Property name="CompositeDataSetIndex" id="4957.CompositeDataSetIndex" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="tree" id="4957.CompositeDataSetIndex.tree"/>
+      </Property>
+      <Property name="Input" id="4957.Input" number_of_elements="1">
+        <Proxy value="4707" output_port="0"/>
+        <Domain name="input_type" id="4957.Input.input_type"/>
+      </Property>
+      <Property name="SeriesColor" id="4957.SeriesColor" number_of_elements="200">
+        <Element index="0" value="X(0,0) (X)"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="X(0,1) (X)"/>
+        <Element index="5" value="0.889998"/>
+        <Element index="6" value="0.100008"/>
+        <Element index="7" value="0.110002"/>
+        <Element index="8" value="X(0,10) (X)"/>
+        <Element index="9" value="0.220005"/>
+        <Element index="10" value="0.489998"/>
+        <Element index="11" value="0.719997"/>
+        <Element index="12" value="X(0,11) (X)"/>
+        <Element index="13" value="0.300008"/>
+        <Element index="14" value="0.689998"/>
+        <Element index="15" value="0.289998"/>
+        <Element index="16" value="X(0,12) (X)"/>
+        <Element index="17" value="0.6"/>
+        <Element index="18" value="0.310002"/>
+        <Element index="19" value="0.639994"/>
+        <Element index="20" value="X(0,13) (X)"/>
+        <Element index="21" value="1"/>
+        <Element index="22" value="0.500008"/>
+        <Element index="23" value="0"/>
+        <Element index="24" value="X(0,14) (X)"/>
+        <Element index="25" value="0.650004"/>
+        <Element index="26" value="0.340002"/>
+        <Element index="27" value="0.160006"/>
+        <Element index="28" value="X(0,15) (X)"/>
+        <Element index="29" value="0"/>
+        <Element index="30" value="0"/>
+        <Element index="31" value="0"/>
+        <Element index="32" value="X(0,16) (X)"/>
+        <Element index="33" value="0.889998"/>
+        <Element index="34" value="0.100008"/>
+        <Element index="35" value="0.110002"/>
+        <Element index="36" value="X(0,17) (X)"/>
+        <Element index="37" value="0.220005"/>
+        <Element index="38" value="0.489998"/>
+        <Element index="39" value="0.719997"/>
+        <Element index="40" value="X(0,18) (X)"/>
+        <Element index="41" value="0.300008"/>
+        <Element index="42" value="0.689998"/>
+        <Element index="43" value="0.289998"/>
+        <Element index="44" value="X(0,19) (X)"/>
+        <Element index="45" value="0.6"/>
+        <Element index="46" value="0.310002"/>
+        <Element index="47" value="0.639994"/>
+        <Element index="48" value="X(0,2) (X)"/>
+        <Element index="49" value="1"/>
+        <Element index="50" value="0.500008"/>
+        <Element index="51" value="0"/>
+        <Element index="52" value="X(0,20) (X)"/>
+        <Element index="53" value="0.650004"/>
+        <Element index="54" value="0.340002"/>
+        <Element index="55" value="0.160006"/>
+        <Element index="56" value="X(0,21) (X)"/>
+        <Element index="57" value="0"/>
+        <Element index="58" value="0"/>
+        <Element index="59" value="0"/>
+        <Element index="60" value="X(0,22) (X)"/>
+        <Element index="61" value="0.889998"/>
+        <Element index="62" value="0.100008"/>
+        <Element index="63" value="0.110002"/>
+        <Element index="64" value="X(0,23) (X)"/>
+        <Element index="65" value="0.220005"/>
+        <Element index="66" value="0.489998"/>
+        <Element index="67" value="0.719997"/>
+        <Element index="68" value="X(0,24) (X)"/>
+        <Element index="69" value="0.300008"/>
+        <Element index="70" value="0.689998"/>
+        <Element index="71" value="0.289998"/>
+        <Element index="72" value="X(0,25) (X)"/>
+        <Element index="73" value="0.6"/>
+        <Element index="74" value="0.310002"/>
+        <Element index="75" value="0.639994"/>
+        <Element index="76" value="X(0,26) (X)"/>
+        <Element index="77" value="1"/>
+        <Element index="78" value="0.500008"/>
+        <Element index="79" value="0"/>
+        <Element index="80" value="X(0,27) (X)"/>
+        <Element index="81" value="0.650004"/>
+        <Element index="82" value="0.340002"/>
+        <Element index="83" value="0.160006"/>
+        <Element index="84" value="X(0,28) (X)"/>
+        <Element index="85" value="0"/>
+        <Element index="86" value="0"/>
+        <Element index="87" value="0"/>
+        <Element index="88" value="X(0,29) (X)"/>
+        <Element index="89" value="0.889998"/>
+        <Element index="90" value="0.100008"/>
+        <Element index="91" value="0.110002"/>
+        <Element index="92" value="X(0,3) (X)"/>
+        <Element index="93" value="0.220005"/>
+        <Element index="94" value="0.489998"/>
+        <Element index="95" value="0.719997"/>
+        <Element index="96" value="X(0,30) (X)"/>
+        <Element index="97" value="0.300008"/>
+        <Element index="98" value="0.689998"/>
+        <Element index="99" value="0.289998"/>
+        <Element index="100" value="X(0,31) (X)"/>
+        <Element index="101" value="0.6"/>
+        <Element index="102" value="0.310002"/>
+        <Element index="103" value="0.639994"/>
+        <Element index="104" value="X(0,32) (X)"/>
+        <Element index="105" value="1"/>
+        <Element index="106" value="0.500008"/>
+        <Element index="107" value="0"/>
+        <Element index="108" value="X(0,33) (X)"/>
+        <Element index="109" value="0.650004"/>
+        <Element index="110" value="0.340002"/>
+        <Element index="111" value="0.160006"/>
+        <Element index="112" value="X(0,34) (X)"/>
+        <Element index="113" value="0"/>
+        <Element index="114" value="0"/>
+        <Element index="115" value="0"/>
+        <Element index="116" value="X(0,35) (X)"/>
+        <Element index="117" value="0.889998"/>
+        <Element index="118" value="0.100008"/>
+        <Element index="119" value="0.110002"/>
+        <Element index="120" value="X(0,36) (X)"/>
+        <Element index="121" value="0.220005"/>
+        <Element index="122" value="0.489998"/>
+        <Element index="123" value="0.719997"/>
+        <Element index="124" value="X(0,37) (X)"/>
+        <Element index="125" value="0.300008"/>
+        <Element index="126" value="0.689998"/>
+        <Element index="127" value="0.289998"/>
+        <Element index="128" value="X(0,38) (X)"/>
+        <Element index="129" value="0.6"/>
+        <Element index="130" value="0.310002"/>
+        <Element index="131" value="0.639994"/>
+        <Element index="132" value="X(0,39) (X)"/>
+        <Element index="133" value="1"/>
+        <Element index="134" value="0.500008"/>
+        <Element index="135" value="0"/>
+        <Element index="136" value="X(0,4) (X)"/>
+        <Element index="137" value="0.650004"/>
+        <Element index="138" value="0.340002"/>
+        <Element index="139" value="0.160006"/>
+        <Element index="140" value="X(0,40) (X)"/>
+        <Element index="141" value="0"/>
+        <Element index="142" value="0"/>
+        <Element index="143" value="0"/>
+        <Element index="144" value="X(0,41) (X)"/>
+        <Element index="145" value="0.889998"/>
+        <Element index="146" value="0.100008"/>
+        <Element index="147" value="0.110002"/>
+        <Element index="148" value="X(0,42) (X)"/>
+        <Element index="149" value="0.220005"/>
+        <Element index="150" value="0.489998"/>
+        <Element index="151" value="0.719997"/>
+        <Element index="152" value="X(0,43) (X)"/>
+        <Element index="153" value="0.300008"/>
+        <Element index="154" value="0.689998"/>
+        <Element index="155" value="0.289998"/>
+        <Element index="156" value="X(0,44) (X)"/>
+        <Element index="157" value="0.6"/>
+        <Element index="158" value="0.310002"/>
+        <Element index="159" value="0.639994"/>
+        <Element index="160" value="X(0,45) (X)"/>
+        <Element index="161" value="1"/>
+        <Element index="162" value="0.500008"/>
+        <Element index="163" value="0"/>
+        <Element index="164" value="X(0,46) (X)"/>
+        <Element index="165" value="0.650004"/>
+        <Element index="166" value="0.340002"/>
+        <Element index="167" value="0.160006"/>
+        <Element index="168" value="X(0,47) (X)"/>
+        <Element index="169" value="0"/>
+        <Element index="170" value="0"/>
+        <Element index="171" value="0"/>
+        <Element index="172" value="X(0,48) (X)"/>
+        <Element index="173" value="0.889998"/>
+        <Element index="174" value="0.100008"/>
+        <Element index="175" value="0.110002"/>
+        <Element index="176" value="X(0,49) (X)"/>
+        <Element index="177" value="0.220005"/>
+        <Element index="178" value="0.489998"/>
+        <Element index="179" value="0.719997"/>
+        <Element index="180" value="X(0,5) (X)"/>
+        <Element index="181" value="0.300008"/>
+        <Element index="182" value="0.689998"/>
+        <Element index="183" value="0.289998"/>
+        <Element index="184" value="X(0,6) (X)"/>
+        <Element index="185" value="0.6"/>
+        <Element index="186" value="0.310002"/>
+        <Element index="187" value="0.639994"/>
+        <Element index="188" value="X(0,7) (X)"/>
+        <Element index="189" value="1"/>
+        <Element index="190" value="0.500008"/>
+        <Element index="191" value="0"/>
+        <Element index="192" value="X(0,8) (X)"/>
+        <Element index="193" value="0.650004"/>
+        <Element index="194" value="0.340002"/>
+        <Element index="195" value="0.160006"/>
+        <Element index="196" value="X(0,9) (X)"/>
+        <Element index="197" value="0"/>
+        <Element index="198" value="0"/>
+        <Element index="199" value="0"/>
+        <Domain name="array_list" id="4957.SeriesColor.array_list">
+          <String text="X(0,0) (X)"/>
+          <String text="X(0,1) (X)"/>
+          <String text="X(0,10) (X)"/>
+          <String text="X(0,11) (X)"/>
+          <String text="X(0,12) (X)"/>
+          <String text="X(0,13) (X)"/>
+          <String text="X(0,14) (X)"/>
+          <String text="X(0,15) (X)"/>
+          <String text="X(0,16) (X)"/>
+          <String text="X(0,17) (X)"/>
+          <String text="X(0,18) (X)"/>
+          <String text="X(0,19) (X)"/>
+          <String text="X(0,2) (X)"/>
+          <String text="X(0,20) (X)"/>
+          <String text="X(0,21) (X)"/>
+          <String text="X(0,22) (X)"/>
+          <String text="X(0,23) (X)"/>
+          <String text="X(0,24) (X)"/>
+          <String text="X(0,25) (X)"/>
+          <String text="X(0,26) (X)"/>
+          <String text="X(0,27) (X)"/>
+          <String text="X(0,28) (X)"/>
+          <String text="X(0,29) (X)"/>
+          <String text="X(0,3) (X)"/>
+          <String text="X(0,30) (X)"/>
+          <String text="X(0,31) (X)"/>
+          <String text="X(0,32) (X)"/>
+          <String text="X(0,33) (X)"/>
+          <String text="X(0,34) (X)"/>
+          <String text="X(0,35) (X)"/>
+          <String text="X(0,36) (X)"/>
+          <String text="X(0,37) (X)"/>
+          <String text="X(0,38) (X)"/>
+          <String text="X(0,39) (X)"/>
+          <String text="X(0,4) (X)"/>
+          <String text="X(0,40) (X)"/>
+          <String text="X(0,41) (X)"/>
+          <String text="X(0,42) (X)"/>
+          <String text="X(0,43) (X)"/>
+          <String text="X(0,44) (X)"/>
+          <String text="X(0,45) (X)"/>
+          <String text="X(0,46) (X)"/>
+          <String text="X(0,47) (X)"/>
+          <String text="X(0,48) (X)"/>
+          <String text="X(0,49) (X)"/>
+          <String text="X(0,5) (X)"/>
+          <String text="X(0,6) (X)"/>
+          <String text="X(0,7) (X)"/>
+          <String text="X(0,8) (X)"/>
+          <String text="X(0,9) (X)"/>
+        </Domain>
+      </Property>
+      <Property name="SeriesLabel" id="4957.SeriesLabel" number_of_elements="100">
+        <Element index="0" value="X(0,0) (X)"/>
+        <Element index="1" value="X(0,0) (X)"/>
+        <Element index="2" value="X(0,1) (X)"/>
+        <Element index="3" value="X(0,1) (X)"/>
+        <Element index="4" value="X(0,10) (X)"/>
+        <Element index="5" value="X(0,10) (X)"/>
+        <Element index="6" value="X(0,11) (X)"/>
+        <Element index="7" value="X(0,11) (X)"/>
+        <Element index="8" value="X(0,12) (X)"/>
+        <Element index="9" value="X(0,12) (X)"/>
+        <Element index="10" value="X(0,13) (X)"/>
+        <Element index="11" value="X(0,13) (X)"/>
+        <Element index="12" value="X(0,14) (X)"/>
+        <Element index="13" value="X(0,14) (X)"/>
+        <Element index="14" value="X(0,15) (X)"/>
+        <Element index="15" value="X(0,15) (X)"/>
+        <Element index="16" value="X(0,16) (X)"/>
+        <Element index="17" value="X(0,16) (X)"/>
+        <Element index="18" value="X(0,17) (X)"/>
+        <Element index="19" value="X(0,17) (X)"/>
+        <Element index="20" value="X(0,18) (X)"/>
+        <Element index="21" value="X(0,18) (X)"/>
+        <Element index="22" value="X(0,19) (X)"/>
+        <Element index="23" value="X(0,19) (X)"/>
+        <Element index="24" value="X(0,2) (X)"/>
+        <Element index="25" value="X(0,2) (X)"/>
+        <Element index="26" value="X(0,20) (X)"/>
+        <Element index="27" value="X(0,20) (X)"/>
+        <Element index="28" value="X(0,21) (X)"/>
+        <Element index="29" value="X(0,21) (X)"/>
+        <Element index="30" value="X(0,22) (X)"/>
+        <Element index="31" value="X(0,22) (X)"/>
+        <Element index="32" value="X(0,23) (X)"/>
+        <Element index="33" value="X(0,23) (X)"/>
+        <Element index="34" value="X(0,24) (X)"/>
+        <Element index="35" value="X(0,24) (X)"/>
+        <Element index="36" value="X(0,25) (X)"/>
+        <Element index="37" value="X(0,25) (X)"/>
+        <Element index="38" value="X(0,26) (X)"/>
+        <Element index="39" value="X(0,26) (X)"/>
+        <Element index="40" value="X(0,27) (X)"/>
+        <Element index="41" value="X(0,27) (X)"/>
+        <Element index="42" value="X(0,28) (X)"/>
+        <Element index="43" value="X(0,28) (X)"/>
+        <Element index="44" value="X(0,29) (X)"/>
+        <Element index="45" value="X(0,29) (X)"/>
+        <Element index="46" value="X(0,3) (X)"/>
+        <Element index="47" value="X(0,3) (X)"/>
+        <Element index="48" value="X(0,30) (X)"/>
+        <Element index="49" value="X(0,30) (X)"/>
+        <Element index="50" value="X(0,31) (X)"/>
+        <Element index="51" value="X(0,31) (X)"/>
+        <Element index="52" value="X(0,32) (X)"/>
+        <Element index="53" value="X(0,32) (X)"/>
+        <Element index="54" value="X(0,33) (X)"/>
+        <Element index="55" value="X(0,33) (X)"/>
+        <Element index="56" value="X(0,34) (X)"/>
+        <Element index="57" value="X(0,34) (X)"/>
+        <Element index="58" value="X(0,35) (X)"/>
+        <Element index="59" value="X(0,35) (X)"/>
+        <Element index="60" value="X(0,36) (X)"/>
+        <Element index="61" value="X(0,36) (X)"/>
+        <Element index="62" value="X(0,37) (X)"/>
+        <Element index="63" value="X(0,37) (X)"/>
+        <Element index="64" value="X(0,38) (X)"/>
+        <Element index="65" value="X(0,38) (X)"/>
+        <Element index="66" value="X(0,39) (X)"/>
+        <Element index="67" value="X(0,39) (X)"/>
+        <Element index="68" value="X(0,4) (X)"/>
+        <Element index="69" value="X(0,4) (X)"/>
+        <Element index="70" value="X(0,40) (X)"/>
+        <Element index="71" value="X(0,40) (X)"/>
+        <Element index="72" value="X(0,41) (X)"/>
+        <Element index="73" value="X(0,41) (X)"/>
+        <Element index="74" value="X(0,42) (X)"/>
+        <Element index="75" value="X(0,42) (X)"/>
+        <Element index="76" value="X(0,43) (X)"/>
+        <Element index="77" value="X(0,43) (X)"/>
+        <Element index="78" value="X(0,44) (X)"/>
+        <Element index="79" value="X(0,44) (X)"/>
+        <Element index="80" value="X(0,45) (X)"/>
+        <Element index="81" value="X(0,45) (X)"/>
+        <Element index="82" value="X(0,46) (X)"/>
+        <Element index="83" value="X(0,46) (X)"/>
+        <Element index="84" value="X(0,47) (X)"/>
+        <Element index="85" value="X(0,47) (X)"/>
+        <Element index="86" value="X(0,48) (X)"/>
+        <Element index="87" value="X(0,48) (X)"/>
+        <Element index="88" value="X(0,49) (X)"/>
+        <Element index="89" value="X(0,49) (X)"/>
+        <Element index="90" value="X(0,5) (X)"/>
+        <Element index="91" value="X(0,5) (X)"/>
+        <Element index="92" value="X(0,6) (X)"/>
+        <Element index="93" value="X(0,6) (X)"/>
+        <Element index="94" value="X(0,7) (X)"/>
+        <Element index="95" value="X(0,7) (X)"/>
+        <Element index="96" value="X(0,8) (X)"/>
+        <Element index="97" value="X(0,8) (X)"/>
+        <Element index="98" value="X(0,9) (X)"/>
+        <Element index="99" value="X(0,9) (X)"/>
+        <Domain name="array_list" id="4957.SeriesLabel.array_list">
+          <String text="X(0,0) (X)"/>
+          <String text="X(0,1) (X)"/>
+          <String text="X(0,10) (X)"/>
+          <String text="X(0,11) (X)"/>
+          <String text="X(0,12) (X)"/>
+          <String text="X(0,13) (X)"/>
+          <String text="X(0,14) (X)"/>
+          <String text="X(0,15) (X)"/>
+          <String text="X(0,16) (X)"/>
+          <String text="X(0,17) (X)"/>
+          <String text="X(0,18) (X)"/>
+          <String text="X(0,19) (X)"/>
+          <String text="X(0,2) (X)"/>
+          <String text="X(0,20) (X)"/>
+          <String text="X(0,21) (X)"/>
+          <String text="X(0,22) (X)"/>
+          <String text="X(0,23) (X)"/>
+          <String text="X(0,24) (X)"/>
+          <String text="X(0,25) (X)"/>
+          <String text="X(0,26) (X)"/>
+          <String text="X(0,27) (X)"/>
+          <String text="X(0,28) (X)"/>
+          <String text="X(0,29) (X)"/>
+          <String text="X(0,3) (X)"/>
+          <String text="X(0,30) (X)"/>
+          <String text="X(0,31) (X)"/>
+          <String text="X(0,32) (X)"/>
+          <String text="X(0,33) (X)"/>
+          <String text="X(0,34) (X)"/>
+          <String text="X(0,35) (X)"/>
+          <String text="X(0,36) (X)"/>
+          <String text="X(0,37) (X)"/>
+          <String text="X(0,38) (X)"/>
+          <String text="X(0,39) (X)"/>
+          <String text="X(0,4) (X)"/>
+          <String text="X(0,40) (X)"/>
+          <String text="X(0,41) (X)"/>
+          <String text="X(0,42) (X)"/>
+          <String text="X(0,43) (X)"/>
+          <String text="X(0,44) (X)"/>
+          <String text="X(0,45) (X)"/>
+          <String text="X(0,46) (X)"/>
+          <String text="X(0,47) (X)"/>
+          <String text="X(0,48) (X)"/>
+          <String text="X(0,49) (X)"/>
+          <String text="X(0,5) (X)"/>
+          <String text="X(0,6) (X)"/>
+          <String text="X(0,7) (X)"/>
+          <String text="X(0,8) (X)"/>
+          <String text="X(0,9) (X)"/>
+        </Domain>
+      </Property>
+      <Property name="SeriesLabelPrefix" id="4957.SeriesLabelPrefix" number_of_elements="1">
+        <Element index="0" value=""/>
+      </Property>
+      <Property name="SeriesLineStyle" id="4957.SeriesLineStyle" number_of_elements="100">
+        <Element index="0" value="X(0,0) (X)"/>
+        <Element index="1" value="1"/>
+        <Element index="2" value="X(0,1) (X)"/>
+        <Element index="3" value="1"/>
+        <Element index="4" value="X(0,10) (X)"/>
+        <Element index="5" value="1"/>
+        <Element index="6" value="X(0,11) (X)"/>
+        <Element index="7" value="1"/>
+        <Element index="8" value="X(0,12) (X)"/>
+        <Element index="9" value="1"/>
+        <Element index="10" value="X(0,13) (X)"/>
+        <Element index="11" value="1"/>
+        <Element index="12" value="X(0,14) (X)"/>
+        <Element index="13" value="1"/>
+        <Element index="14" value="X(0,15) (X)"/>
+        <Element index="15" value="1"/>
+        <Element index="16" value="X(0,16) (X)"/>
+        <Element index="17" value="1"/>
+        <Element index="18" value="X(0,17) (X)"/>
+        <Element index="19" value="1"/>
+        <Element index="20" value="X(0,18) (X)"/>
+        <Element index="21" value="1"/>
+        <Element index="22" value="X(0,19) (X)"/>
+        <Element index="23" value="1"/>
+        <Element index="24" value="X(0,2) (X)"/>
+        <Element index="25" value="1"/>
+        <Element index="26" value="X(0,20) (X)"/>
+        <Element index="27" value="1"/>
+        <Element index="28" value="X(0,21) (X)"/>
+        <Element index="29" value="1"/>
+        <Element index="30" value="X(0,22) (X)"/>
+        <Element index="31" value="1"/>
+        <Element index="32" value="X(0,23) (X)"/>
+        <Element index="33" value="1"/>
+        <Element index="34" value="X(0,24) (X)"/>
+        <Element index="35" value="1"/>
+        <Element index="36" value="X(0,25) (X)"/>
+        <Element index="37" value="1"/>
+        <Element index="38" value="X(0,26) (X)"/>
+        <Element index="39" value="1"/>
+        <Element index="40" value="X(0,27) (X)"/>
+        <Element index="41" value="1"/>
+        <Element index="42" value="X(0,28) (X)"/>
+        <Element index="43" value="1"/>
+        <Element index="44" value="X(0,29) (X)"/>
+        <Element index="45" value="1"/>
+        <Element index="46" value="X(0,3) (X)"/>
+        <Element index="47" value="1"/>
+        <Element index="48" value="X(0,30) (X)"/>
+        <Element index="49" value="1"/>
+        <Element index="50" value="X(0,31) (X)"/>
+        <Element index="51" value="1"/>
+        <Element index="52" value="X(0,32) (X)"/>
+        <Element index="53" value="1"/>
+        <Element index="54" value="X(0,33) (X)"/>
+        <Element index="55" value="1"/>
+        <Element index="56" value="X(0,34) (X)"/>
+        <Element index="57" value="1"/>
+        <Element index="58" value="X(0,35) (X)"/>
+        <Element index="59" value="1"/>
+        <Element index="60" value="X(0,36) (X)"/>
+        <Element index="61" value="1"/>
+        <Element index="62" value="X(0,37) (X)"/>
+        <Element index="63" value="1"/>
+        <Element index="64" value="X(0,38) (X)"/>
+        <Element index="65" value="1"/>
+        <Element index="66" value="X(0,39) (X)"/>
+        <Element index="67" value="1"/>
+        <Element index="68" value="X(0,4) (X)"/>
+        <Element index="69" value="1"/>
+        <Element index="70" value="X(0,40) (X)"/>
+        <Element index="71" value="1"/>
+        <Element index="72" value="X(0,41) (X)"/>
+        <Element index="73" value="1"/>
+        <Element index="74" value="X(0,42) (X)"/>
+        <Element index="75" value="1"/>
+        <Element index="76" value="X(0,43) (X)"/>
+        <Element index="77" value="1"/>
+        <Element index="78" value="X(0,44) (X)"/>
+        <Element index="79" value="1"/>
+        <Element index="80" value="X(0,45) (X)"/>
+        <Element index="81" value="1"/>
+        <Element index="82" value="X(0,46) (X)"/>
+        <Element index="83" value="1"/>
+        <Element index="84" value="X(0,47) (X)"/>
+        <Element index="85" value="1"/>
+        <Element index="86" value="X(0,48) (X)"/>
+        <Element index="87" value="1"/>
+        <Element index="88" value="X(0,49) (X)"/>
+        <Element index="89" value="1"/>
+        <Element index="90" value="X(0,5) (X)"/>
+        <Element index="91" value="1"/>
+        <Element index="92" value="X(0,6) (X)"/>
+        <Element index="93" value="1"/>
+        <Element index="94" value="X(0,7) (X)"/>
+        <Element index="95" value="1"/>
+        <Element index="96" value="X(0,8) (X)"/>
+        <Element index="97" value="1"/>
+        <Element index="98" value="X(0,9) (X)"/>
+        <Element index="99" value="1"/>
+        <Domain name="array_list" id="4957.SeriesLineStyle.array_list">
+          <String text="X(0,0) (X)"/>
+          <String text="X(0,1) (X)"/>
+          <String text="X(0,10) (X)"/>
+          <String text="X(0,11) (X)"/>
+          <String text="X(0,12) (X)"/>
+          <String text="X(0,13) (X)"/>
+          <String text="X(0,14) (X)"/>
+          <String text="X(0,15) (X)"/>
+          <String text="X(0,16) (X)"/>
+          <String text="X(0,17) (X)"/>
+          <String text="X(0,18) (X)"/>
+          <String text="X(0,19) (X)"/>
+          <String text="X(0,2) (X)"/>
+          <String text="X(0,20) (X)"/>
+          <String text="X(0,21) (X)"/>
+          <String text="X(0,22) (X)"/>
+          <String text="X(0,23) (X)"/>
+          <String text="X(0,24) (X)"/>
+          <String text="X(0,25) (X)"/>
+          <String text="X(0,26) (X)"/>
+          <String text="X(0,27) (X)"/>
+          <String text="X(0,28) (X)"/>
+          <String text="X(0,29) (X)"/>
+          <String text="X(0,3) (X)"/>
+          <String text="X(0,30) (X)"/>
+          <String text="X(0,31) (X)"/>
+          <String text="X(0,32) (X)"/>
+          <String text="X(0,33) (X)"/>
+          <String text="X(0,34) (X)"/>
+          <String text="X(0,35) (X)"/>
+          <String text="X(0,36) (X)"/>
+          <String text="X(0,37) (X)"/>
+          <String text="X(0,38) (X)"/>
+          <String text="X(0,39) (X)"/>
+          <String text="X(0,4) (X)"/>
+          <String text="X(0,40) (X)"/>
+          <String text="X(0,41) (X)"/>
+          <String text="X(0,42) (X)"/>
+          <String text="X(0,43) (X)"/>
+          <String text="X(0,44) (X)"/>
+          <String text="X(0,45) (X)"/>
+          <String text="X(0,46) (X)"/>
+          <String text="X(0,47) (X)"/>
+          <String text="X(0,48) (X)"/>
+          <String text="X(0,49) (X)"/>
+          <String text="X(0,5) (X)"/>
+          <String text="X(0,6) (X)"/>
+          <String text="X(0,7) (X)"/>
+          <String text="X(0,8) (X)"/>
+          <String text="X(0,9) (X)"/>
+        </Domain>
+      </Property>
+      <Property name="SeriesLineThickness" id="4957.SeriesLineThickness" number_of_elements="100">
+        <Element index="0" value="X(0,0) (X)"/>
+        <Element index="1" value="2"/>
+        <Element index="2" value="X(0,1) (X)"/>
+        <Element index="3" value="2"/>
+        <Element index="4" value="X(0,10) (X)"/>
+        <Element index="5" value="2"/>
+        <Element index="6" value="X(0,11) (X)"/>
+        <Element index="7" value="2"/>
+        <Element index="8" value="X(0,12) (X)"/>
+        <Element index="9" value="2"/>
+        <Element index="10" value="X(0,13) (X)"/>
+        <Element index="11" value="2"/>
+        <Element index="12" value="X(0,14) (X)"/>
+        <Element index="13" value="2"/>
+        <Element index="14" value="X(0,15) (X)"/>
+        <Element index="15" value="2"/>
+        <Element index="16" value="X(0,16) (X)"/>
+        <Element index="17" value="2"/>
+        <Element index="18" value="X(0,17) (X)"/>
+        <Element index="19" value="2"/>
+        <Element index="20" value="X(0,18) (X)"/>
+        <Element index="21" value="2"/>
+        <Element index="22" value="X(0,19) (X)"/>
+        <Element index="23" value="2"/>
+        <Element index="24" value="X(0,2) (X)"/>
+        <Element index="25" value="2"/>
+        <Element index="26" value="X(0,20) (X)"/>
+        <Element index="27" value="2"/>
+        <Element index="28" value="X(0,21) (X)"/>
+        <Element index="29" value="2"/>
+        <Element index="30" value="X(0,22) (X)"/>
+        <Element index="31" value="2"/>
+        <Element index="32" value="X(0,23) (X)"/>
+        <Element index="33" value="2"/>
+        <Element index="34" value="X(0,24) (X)"/>
+        <Element index="35" value="2"/>
+        <Element index="36" value="X(0,25) (X)"/>
+        <Element index="37" value="2"/>
+        <Element index="38" value="X(0,26) (X)"/>
+        <Element index="39" value="2"/>
+        <Element index="40" value="X(0,27) (X)"/>
+        <Element index="41" value="2"/>
+        <Element index="42" value="X(0,28) (X)"/>
+        <Element index="43" value="2"/>
+        <Element index="44" value="X(0,29) (X)"/>
+        <Element index="45" value="2"/>
+        <Element index="46" value="X(0,3) (X)"/>
+        <Element index="47" value="2"/>
+        <Element index="48" value="X(0,30) (X)"/>
+        <Element index="49" value="2"/>
+        <Element index="50" value="X(0,31) (X)"/>
+        <Element index="51" value="2"/>
+        <Element index="52" value="X(0,32) (X)"/>
+        <Element index="53" value="2"/>
+        <Element index="54" value="X(0,33) (X)"/>
+        <Element index="55" value="2"/>
+        <Element index="56" value="X(0,34) (X)"/>
+        <Element index="57" value="2"/>
+        <Element index="58" value="X(0,35) (X)"/>
+        <Element index="59" value="2"/>
+        <Element index="60" value="X(0,36) (X)"/>
+        <Element index="61" value="2"/>
+        <Element index="62" value="X(0,37) (X)"/>
+        <Element index="63" value="2"/>
+        <Element index="64" value="X(0,38) (X)"/>
+        <Element index="65" value="2"/>
+        <Element index="66" value="X(0,39) (X)"/>
+        <Element index="67" value="2"/>
+        <Element index="68" value="X(0,4) (X)"/>
+        <Element index="69" value="2"/>
+        <Element index="70" value="X(0,40) (X)"/>
+        <Element index="71" value="2"/>
+        <Element index="72" value="X(0,41) (X)"/>
+        <Element index="73" value="2"/>
+        <Element index="74" value="X(0,42) (X)"/>
+        <Element index="75" value="2"/>
+        <Element index="76" value="X(0,43) (X)"/>
+        <Element index="77" value="2"/>
+        <Element index="78" value="X(0,44) (X)"/>
+        <Element index="79" value="2"/>
+        <Element index="80" value="X(0,45) (X)"/>
+        <Element index="81" value="2"/>
+        <Element index="82" value="X(0,46) (X)"/>
+        <Element index="83" value="2"/>
+        <Element index="84" value="X(0,47) (X)"/>
+        <Element index="85" value="2"/>
+        <Element index="86" value="X(0,48) (X)"/>
+        <Element index="87" value="2"/>
+        <Element index="88" value="X(0,49) (X)"/>
+        <Element index="89" value="2"/>
+        <Element index="90" value="X(0,5) (X)"/>
+        <Element index="91" value="2"/>
+        <Element index="92" value="X(0,6) (X)"/>
+        <Element index="93" value="2"/>
+        <Element index="94" value="X(0,7) (X)"/>
+        <Element index="95" value="2"/>
+        <Element index="96" value="X(0,8) (X)"/>
+        <Element index="97" value="2"/>
+        <Element index="98" value="X(0,9) (X)"/>
+        <Element index="99" value="2"/>
+        <Domain name="array_list" id="4957.SeriesLineThickness.array_list">
+          <String text="X(0,0) (X)"/>
+          <String text="X(0,1) (X)"/>
+          <String text="X(0,10) (X)"/>
+          <String text="X(0,11) (X)"/>
+          <String text="X(0,12) (X)"/>
+          <String text="X(0,13) (X)"/>
+          <String text="X(0,14) (X)"/>
+          <String text="X(0,15) (X)"/>
+          <String text="X(0,16) (X)"/>
+          <String text="X(0,17) (X)"/>
+          <String text="X(0,18) (X)"/>
+          <String text="X(0,19) (X)"/>
+          <String text="X(0,2) (X)"/>
+          <String text="X(0,20) (X)"/>
+          <String text="X(0,21) (X)"/>
+          <String text="X(0,22) (X)"/>
+          <String text="X(0,23) (X)"/>
+          <String text="X(0,24) (X)"/>
+          <String text="X(0,25) (X)"/>
+          <String text="X(0,26) (X)"/>
+          <String text="X(0,27) (X)"/>
+          <String text="X(0,28) (X)"/>
+          <String text="X(0,29) (X)"/>
+          <String text="X(0,3) (X)"/>
+          <String text="X(0,30) (X)"/>
+          <String text="X(0,31) (X)"/>
+          <String text="X(0,32) (X)"/>
+          <String text="X(0,33) (X)"/>
+          <String text="X(0,34) (X)"/>
+          <String text="X(0,35) (X)"/>
+          <String text="X(0,36) (X)"/>
+          <String text="X(0,37) (X)"/>
+          <String text="X(0,38) (X)"/>
+          <String text="X(0,39) (X)"/>
+          <String text="X(0,4) (X)"/>
+          <String text="X(0,40) (X)"/>
+          <String text="X(0,41) (X)"/>
+          <String text="X(0,42) (X)"/>
+          <String text="X(0,43) (X)"/>
+          <String text="X(0,44) (X)"/>
+          <String text="X(0,45) (X)"/>
+          <String text="X(0,46) (X)"/>
+          <String text="X(0,47) (X)"/>
+          <String text="X(0,48) (X)"/>
+          <String text="X(0,49) (X)"/>
+          <String text="X(0,5) (X)"/>
+          <String text="X(0,6) (X)"/>
+          <String text="X(0,7) (X)"/>
+          <String text="X(0,8) (X)"/>
+          <String text="X(0,9) (X)"/>
+        </Domain>
+      </Property>
+      <Property name="SeriesMarkerStyle" id="4957.SeriesMarkerStyle" number_of_elements="100">
+        <Element index="0" value="X(0,0) (X)"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="X(0,1) (X)"/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="X(0,10) (X)"/>
+        <Element index="5" value="0"/>
+        <Element index="6" value="X(0,11) (X)"/>
+        <Element index="7" value="0"/>
+        <Element index="8" value="X(0,12) (X)"/>
+        <Element index="9" value="0"/>
+        <Element index="10" value="X(0,13) (X)"/>
+        <Element index="11" value="0"/>
+        <Element index="12" value="X(0,14) (X)"/>
+        <Element index="13" value="0"/>
+        <Element index="14" value="X(0,15) (X)"/>
+        <Element index="15" value="0"/>
+        <Element index="16" value="X(0,16) (X)"/>
+        <Element index="17" value="0"/>
+        <Element index="18" value="X(0,17) (X)"/>
+        <Element index="19" value="0"/>
+        <Element index="20" value="X(0,18) (X)"/>
+        <Element index="21" value="0"/>
+        <Element index="22" value="X(0,19) (X)"/>
+        <Element index="23" value="0"/>
+        <Element index="24" value="X(0,2) (X)"/>
+        <Element index="25" value="0"/>
+        <Element index="26" value="X(0,20) (X)"/>
+        <Element index="27" value="0"/>
+        <Element index="28" value="X(0,21) (X)"/>
+        <Element index="29" value="0"/>
+        <Element index="30" value="X(0,22) (X)"/>
+        <Element index="31" value="0"/>
+        <Element index="32" value="X(0,23) (X)"/>
+        <Element index="33" value="0"/>
+        <Element index="34" value="X(0,24) (X)"/>
+        <Element index="35" value="0"/>
+        <Element index="36" value="X(0,25) (X)"/>
+        <Element index="37" value="0"/>
+        <Element index="38" value="X(0,26) (X)"/>
+        <Element index="39" value="0"/>
+        <Element index="40" value="X(0,27) (X)"/>
+        <Element index="41" value="0"/>
+        <Element index="42" value="X(0,28) (X)"/>
+        <Element index="43" value="0"/>
+        <Element index="44" value="X(0,29) (X)"/>
+        <Element index="45" value="0"/>
+        <Element index="46" value="X(0,3) (X)"/>
+        <Element index="47" value="0"/>
+        <Element index="48" value="X(0,30) (X)"/>
+        <Element index="49" value="0"/>
+        <Element index="50" value="X(0,31) (X)"/>
+        <Element index="51" value="0"/>
+        <Element index="52" value="X(0,32) (X)"/>
+        <Element index="53" value="0"/>
+        <Element index="54" value="X(0,33) (X)"/>
+        <Element index="55" value="0"/>
+        <Element index="56" value="X(0,34) (X)"/>
+        <Element index="57" value="0"/>
+        <Element index="58" value="X(0,35) (X)"/>
+        <Element index="59" value="0"/>
+        <Element index="60" value="X(0,36) (X)"/>
+        <Element index="61" value="0"/>
+        <Element index="62" value="X(0,37) (X)"/>
+        <Element index="63" value="0"/>
+        <Element index="64" value="X(0,38) (X)"/>
+        <Element index="65" value="0"/>
+        <Element index="66" value="X(0,39) (X)"/>
+        <Element index="67" value="0"/>
+        <Element index="68" value="X(0,4) (X)"/>
+        <Element index="69" value="0"/>
+        <Element index="70" value="X(0,40) (X)"/>
+        <Element index="71" value="0"/>
+        <Element index="72" value="X(0,41) (X)"/>
+        <Element index="73" value="0"/>
+        <Element index="74" value="X(0,42) (X)"/>
+        <Element index="75" value="0"/>
+        <Element index="76" value="X(0,43) (X)"/>
+        <Element index="77" value="0"/>
+        <Element index="78" value="X(0,44) (X)"/>
+        <Element index="79" value="0"/>
+        <Element index="80" value="X(0,45) (X)"/>
+        <Element index="81" value="0"/>
+        <Element index="82" value="X(0,46) (X)"/>
+        <Element index="83" value="0"/>
+        <Element index="84" value="X(0,47) (X)"/>
+        <Element index="85" value="0"/>
+        <Element index="86" value="X(0,48) (X)"/>
+        <Element index="87" value="0"/>
+        <Element index="88" value="X(0,49) (X)"/>
+        <Element index="89" value="0"/>
+        <Element index="90" value="X(0,5) (X)"/>
+        <Element index="91" value="0"/>
+        <Element index="92" value="X(0,6) (X)"/>
+        <Element index="93" value="0"/>
+        <Element index="94" value="X(0,7) (X)"/>
+        <Element index="95" value="0"/>
+        <Element index="96" value="X(0,8) (X)"/>
+        <Element index="97" value="0"/>
+        <Element index="98" value="X(0,9) (X)"/>
+        <Element index="99" value="0"/>
+        <Domain name="array_list" id="4957.SeriesMarkerStyle.array_list">
+          <String text="X(0,0) (X)"/>
+          <String text="X(0,1) (X)"/>
+          <String text="X(0,10) (X)"/>
+          <String text="X(0,11) (X)"/>
+          <String text="X(0,12) (X)"/>
+          <String text="X(0,13) (X)"/>
+          <String text="X(0,14) (X)"/>
+          <String text="X(0,15) (X)"/>
+          <String text="X(0,16) (X)"/>
+          <String text="X(0,17) (X)"/>
+          <String text="X(0,18) (X)"/>
+          <String text="X(0,19) (X)"/>
+          <String text="X(0,2) (X)"/>
+          <String text="X(0,20) (X)"/>
+          <String text="X(0,21) (X)"/>
+          <String text="X(0,22) (X)"/>
+          <String text="X(0,23) (X)"/>
+          <String text="X(0,24) (X)"/>
+          <String text="X(0,25) (X)"/>
+          <String text="X(0,26) (X)"/>
+          <String text="X(0,27) (X)"/>
+          <String text="X(0,28) (X)"/>
+          <String text="X(0,29) (X)"/>
+          <String text="X(0,3) (X)"/>
+          <String text="X(0,30) (X)"/>
+          <String text="X(0,31) (X)"/>
+          <String text="X(0,32) (X)"/>
+          <String text="X(0,33) (X)"/>
+          <String text="X(0,34) (X)"/>
+          <String text="X(0,35) (X)"/>
+          <String text="X(0,36) (X)"/>
+          <String text="X(0,37) (X)"/>
+          <String text="X(0,38) (X)"/>
+          <String text="X(0,39) (X)"/>
+          <String text="X(0,4) (X)"/>
+          <String text="X(0,40) (X)"/>
+          <String text="X(0,41) (X)"/>
+          <String text="X(0,42) (X)"/>
+          <String text="X(0,43) (X)"/>
+          <String text="X(0,44) (X)"/>
+          <String text="X(0,45) (X)"/>
+          <String text="X(0,46) (X)"/>
+          <String text="X(0,47) (X)"/>
+          <String text="X(0,48) (X)"/>
+          <String text="X(0,49) (X)"/>
+          <String text="X(0,5) (X)"/>
+          <String text="X(0,6) (X)"/>
+          <String text="X(0,7) (X)"/>
+          <String text="X(0,8) (X)"/>
+          <String text="X(0,9) (X)"/>
+        </Domain>
+      </Property>
+      <Property name="SeriesPlotCorner" id="4957.SeriesPlotCorner" number_of_elements="100">
+        <Element index="0" value="X(0,0) (X)"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="X(0,1) (X)"/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="X(0,10) (X)"/>
+        <Element index="5" value="0"/>
+        <Element index="6" value="X(0,11) (X)"/>
+        <Element index="7" value="0"/>
+        <Element index="8" value="X(0,12) (X)"/>
+        <Element index="9" value="0"/>
+        <Element index="10" value="X(0,13) (X)"/>
+        <Element index="11" value="0"/>
+        <Element index="12" value="X(0,14) (X)"/>
+        <Element index="13" value="0"/>
+        <Element index="14" value="X(0,15) (X)"/>
+        <Element index="15" value="0"/>
+        <Element index="16" value="X(0,16) (X)"/>
+        <Element index="17" value="0"/>
+        <Element index="18" value="X(0,17) (X)"/>
+        <Element index="19" value="0"/>
+        <Element index="20" value="X(0,18) (X)"/>
+        <Element index="21" value="0"/>
+        <Element index="22" value="X(0,19) (X)"/>
+        <Element index="23" value="0"/>
+        <Element index="24" value="X(0,2) (X)"/>
+        <Element index="25" value="0"/>
+        <Element index="26" value="X(0,20) (X)"/>
+        <Element index="27" value="0"/>
+        <Element index="28" value="X(0,21) (X)"/>
+        <Element index="29" value="0"/>
+        <Element index="30" value="X(0,22) (X)"/>
+        <Element index="31" value="0"/>
+        <Element index="32" value="X(0,23) (X)"/>
+        <Element index="33" value="0"/>
+        <Element index="34" value="X(0,24) (X)"/>
+        <Element index="35" value="0"/>
+        <Element index="36" value="X(0,25) (X)"/>
+        <Element index="37" value="0"/>
+        <Element index="38" value="X(0,26) (X)"/>
+        <Element index="39" value="0"/>
+        <Element index="40" value="X(0,27) (X)"/>
+        <Element index="41" value="0"/>
+        <Element index="42" value="X(0,28) (X)"/>
+        <Element index="43" value="0"/>
+        <Element index="44" value="X(0,29) (X)"/>
+        <Element index="45" value="0"/>
+        <Element index="46" value="X(0,3) (X)"/>
+        <Element index="47" value="0"/>
+        <Element index="48" value="X(0,30) (X)"/>
+        <Element index="49" value="0"/>
+        <Element index="50" value="X(0,31) (X)"/>
+        <Element index="51" value="0"/>
+        <Element index="52" value="X(0,32) (X)"/>
+        <Element index="53" value="0"/>
+        <Element index="54" value="X(0,33) (X)"/>
+        <Element index="55" value="0"/>
+        <Element index="56" value="X(0,34) (X)"/>
+        <Element index="57" value="0"/>
+        <Element index="58" value="X(0,35) (X)"/>
+        <Element index="59" value="0"/>
+        <Element index="60" value="X(0,36) (X)"/>
+        <Element index="61" value="0"/>
+        <Element index="62" value="X(0,37) (X)"/>
+        <Element index="63" value="0"/>
+        <Element index="64" value="X(0,38) (X)"/>
+        <Element index="65" value="0"/>
+        <Element index="66" value="X(0,39) (X)"/>
+        <Element index="67" value="0"/>
+        <Element index="68" value="X(0,4) (X)"/>
+        <Element index="69" value="0"/>
+        <Element index="70" value="X(0,40) (X)"/>
+        <Element index="71" value="0"/>
+        <Element index="72" value="X(0,41) (X)"/>
+        <Element index="73" value="0"/>
+        <Element index="74" value="X(0,42) (X)"/>
+        <Element index="75" value="0"/>
+        <Element index="76" value="X(0,43) (X)"/>
+        <Element index="77" value="0"/>
+        <Element index="78" value="X(0,44) (X)"/>
+        <Element index="79" value="0"/>
+        <Element index="80" value="X(0,45) (X)"/>
+        <Element index="81" value="0"/>
+        <Element index="82" value="X(0,46) (X)"/>
+        <Element index="83" value="0"/>
+        <Element index="84" value="X(0,47) (X)"/>
+        <Element index="85" value="0"/>
+        <Element index="86" value="X(0,48) (X)"/>
+        <Element index="87" value="0"/>
+        <Element index="88" value="X(0,49) (X)"/>
+        <Element index="89" value="0"/>
+        <Element index="90" value="X(0,5) (X)"/>
+        <Element index="91" value="0"/>
+        <Element index="92" value="X(0,6) (X)"/>
+        <Element index="93" value="0"/>
+        <Element index="94" value="X(0,7) (X)"/>
+        <Element index="95" value="0"/>
+        <Element index="96" value="X(0,8) (X)"/>
+        <Element index="97" value="0"/>
+        <Element index="98" value="X(0,9) (X)"/>
+        <Element index="99" value="0"/>
+        <Domain name="array_list" id="4957.SeriesPlotCorner.array_list">
+          <String text="X(0,0) (X)"/>
+          <String text="X(0,1) (X)"/>
+          <String text="X(0,10) (X)"/>
+          <String text="X(0,11) (X)"/>
+          <String text="X(0,12) (X)"/>
+          <String text="X(0,13) (X)"/>
+          <String text="X(0,14) (X)"/>
+          <String text="X(0,15) (X)"/>
+          <String text="X(0,16) (X)"/>
+          <String text="X(0,17) (X)"/>
+          <String text="X(0,18) (X)"/>
+          <String text="X(0,19) (X)"/>
+          <String text="X(0,2) (X)"/>
+          <String text="X(0,20) (X)"/>
+          <String text="X(0,21) (X)"/>
+          <String text="X(0,22) (X)"/>
+          <String text="X(0,23) (X)"/>
+          <String text="X(0,24) (X)"/>
+          <String text="X(0,25) (X)"/>
+          <String text="X(0,26) (X)"/>
+          <String text="X(0,27) (X)"/>
+          <String text="X(0,28) (X)"/>
+          <String text="X(0,29) (X)"/>
+          <String text="X(0,3) (X)"/>
+          <String text="X(0,30) (X)"/>
+          <String text="X(0,31) (X)"/>
+          <String text="X(0,32) (X)"/>
+          <String text="X(0,33) (X)"/>
+          <String text="X(0,34) (X)"/>
+          <String text="X(0,35) (X)"/>
+          <String text="X(0,36) (X)"/>
+          <String text="X(0,37) (X)"/>
+          <String text="X(0,38) (X)"/>
+          <String text="X(0,39) (X)"/>
+          <String text="X(0,4) (X)"/>
+          <String text="X(0,40) (X)"/>
+          <String text="X(0,41) (X)"/>
+          <String text="X(0,42) (X)"/>
+          <String text="X(0,43) (X)"/>
+          <String text="X(0,44) (X)"/>
+          <String text="X(0,45) (X)"/>
+          <String text="X(0,46) (X)"/>
+          <String text="X(0,47) (X)"/>
+          <String text="X(0,48) (X)"/>
+          <String text="X(0,49) (X)"/>
+          <String text="X(0,5) (X)"/>
+          <String text="X(0,6) (X)"/>
+          <String text="X(0,7) (X)"/>
+          <String text="X(0,8) (X)"/>
+          <String text="X(0,9) (X)"/>
+        </Domain>
+      </Property>
+      <Property name="SeriesVisibility" id="4957.SeriesVisibility" number_of_elements="100">
+        <Element index="0" value="X(0,0) (X)"/>
+        <Element index="1" value="1"/>
+        <Element index="2" value="X(0,1) (X)"/>
+        <Element index="3" value="1"/>
+        <Element index="4" value="X(0,10) (X)"/>
+        <Element index="5" value="1"/>
+        <Element index="6" value="X(0,11) (X)"/>
+        <Element index="7" value="1"/>
+        <Element index="8" value="X(0,12) (X)"/>
+        <Element index="9" value="1"/>
+        <Element index="10" value="X(0,13) (X)"/>
+        <Element index="11" value="1"/>
+        <Element index="12" value="X(0,14) (X)"/>
+        <Element index="13" value="1"/>
+        <Element index="14" value="X(0,15) (X)"/>
+        <Element index="15" value="1"/>
+        <Element index="16" value="X(0,16) (X)"/>
+        <Element index="17" value="1"/>
+        <Element index="18" value="X(0,17) (X)"/>
+        <Element index="19" value="1"/>
+        <Element index="20" value="X(0,18) (X)"/>
+        <Element index="21" value="1"/>
+        <Element index="22" value="X(0,19) (X)"/>
+        <Element index="23" value="1"/>
+        <Element index="24" value="X(0,2) (X)"/>
+        <Element index="25" value="1"/>
+        <Element index="26" value="X(0,20) (X)"/>
+        <Element index="27" value="1"/>
+        <Element index="28" value="X(0,21) (X)"/>
+        <Element index="29" value="1"/>
+        <Element index="30" value="X(0,22) (X)"/>
+        <Element index="31" value="1"/>
+        <Element index="32" value="X(0,23) (X)"/>
+        <Element index="33" value="1"/>
+        <Element index="34" value="X(0,24) (X)"/>
+        <Element index="35" value="1"/>
+        <Element index="36" value="X(0,25) (X)"/>
+        <Element index="37" value="1"/>
+        <Element index="38" value="X(0,26) (X)"/>
+        <Element index="39" value="1"/>
+        <Element index="40" value="X(0,27) (X)"/>
+        <Element index="41" value="1"/>
+        <Element index="42" value="X(0,28) (X)"/>
+        <Element index="43" value="1"/>
+        <Element index="44" value="X(0,29) (X)"/>
+        <Element index="45" value="1"/>
+        <Element index="46" value="X(0,3) (X)"/>
+        <Element index="47" value="1"/>
+        <Element index="48" value="X(0,30) (X)"/>
+        <Element index="49" value="1"/>
+        <Element index="50" value="X(0,31) (X)"/>
+        <Element index="51" value="1"/>
+        <Element index="52" value="X(0,32) (X)"/>
+        <Element index="53" value="1"/>
+        <Element index="54" value="X(0,33) (X)"/>
+        <Element index="55" value="1"/>
+        <Element index="56" value="X(0,34) (X)"/>
+        <Element index="57" value="1"/>
+        <Element index="58" value="X(0,35) (X)"/>
+        <Element index="59" value="1"/>
+        <Element index="60" value="X(0,36) (X)"/>
+        <Element index="61" value="1"/>
+        <Element index="62" value="X(0,37) (X)"/>
+        <Element index="63" value="1"/>
+        <Element index="64" value="X(0,38) (X)"/>
+        <Element index="65" value="1"/>
+        <Element index="66" value="X(0,39) (X)"/>
+        <Element index="67" value="1"/>
+        <Element index="68" value="X(0,4) (X)"/>
+        <Element index="69" value="1"/>
+        <Element index="70" value="X(0,40) (X)"/>
+        <Element index="71" value="1"/>
+        <Element index="72" value="X(0,41) (X)"/>
+        <Element index="73" value="1"/>
+        <Element index="74" value="X(0,42) (X)"/>
+        <Element index="75" value="1"/>
+        <Element index="76" value="X(0,43) (X)"/>
+        <Element index="77" value="1"/>
+        <Element index="78" value="X(0,44) (X)"/>
+        <Element index="79" value="1"/>
+        <Element index="80" value="X(0,45) (X)"/>
+        <Element index="81" value="1"/>
+        <Element index="82" value="X(0,46) (X)"/>
+        <Element index="83" value="1"/>
+        <Element index="84" value="X(0,47) (X)"/>
+        <Element index="85" value="1"/>
+        <Element index="86" value="X(0,48) (X)"/>
+        <Element index="87" value="1"/>
+        <Element index="88" value="X(0,49) (X)"/>
+        <Element index="89" value="1"/>
+        <Element index="90" value="X(0,5) (X)"/>
+        <Element index="91" value="1"/>
+        <Element index="92" value="X(0,6) (X)"/>
+        <Element index="93" value="1"/>
+        <Element index="94" value="X(0,7) (X)"/>
+        <Element index="95" value="1"/>
+        <Element index="96" value="X(0,8) (X)"/>
+        <Element index="97" value="1"/>
+        <Element index="98" value="X(0,9) (X)"/>
+        <Element index="99" value="1"/>
+        <Domain name="array_list" id="4957.SeriesVisibility.array_list">
+          <String text="X(0,0) (X)"/>
+          <String text="X(0,1) (X)"/>
+          <String text="X(0,10) (X)"/>
+          <String text="X(0,11) (X)"/>
+          <String text="X(0,12) (X)"/>
+          <String text="X(0,13) (X)"/>
+          <String text="X(0,14) (X)"/>
+          <String text="X(0,15) (X)"/>
+          <String text="X(0,16) (X)"/>
+          <String text="X(0,17) (X)"/>
+          <String text="X(0,18) (X)"/>
+          <String text="X(0,19) (X)"/>
+          <String text="X(0,2) (X)"/>
+          <String text="X(0,20) (X)"/>
+          <String text="X(0,21) (X)"/>
+          <String text="X(0,22) (X)"/>
+          <String text="X(0,23) (X)"/>
+          <String text="X(0,24) (X)"/>
+          <String text="X(0,25) (X)"/>
+          <String text="X(0,26) (X)"/>
+          <String text="X(0,27) (X)"/>
+          <String text="X(0,28) (X)"/>
+          <String text="X(0,29) (X)"/>
+          <String text="X(0,3) (X)"/>
+          <String text="X(0,30) (X)"/>
+          <String text="X(0,31) (X)"/>
+          <String text="X(0,32) (X)"/>
+          <String text="X(0,33) (X)"/>
+          <String text="X(0,34) (X)"/>
+          <String text="X(0,35) (X)"/>
+          <String text="X(0,36) (X)"/>
+          <String text="X(0,37) (X)"/>
+          <String text="X(0,38) (X)"/>
+          <String text="X(0,39) (X)"/>
+          <String text="X(0,4) (X)"/>
+          <String text="X(0,40) (X)"/>
+          <String text="X(0,41) (X)"/>
+          <String text="X(0,42) (X)"/>
+          <String text="X(0,43) (X)"/>
+          <String text="X(0,44) (X)"/>
+          <String text="X(0,45) (X)"/>
+          <String text="X(0,46) (X)"/>
+          <String text="X(0,47) (X)"/>
+          <String text="X(0,48) (X)"/>
+          <String text="X(0,49) (X)"/>
+          <String text="X(0,5) (X)"/>
+          <String text="X(0,6) (X)"/>
+          <String text="X(0,7) (X)"/>
+          <String text="X(0,8) (X)"/>
+          <String text="X(0,9) (X)"/>
+        </Domain>
+      </Property>
+      <Property name="UseIndexForXAxis" id="4957.UseIndexForXAxis" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="4957.UseIndexForXAxis.bool"/>
+      </Property>
+      <Property name="Visibility" id="4957.Visibility" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4957.Visibility.bool"/>
+      </Property>
+      <Property name="XArrayName" id="4957.XArrayName" number_of_elements="1">
+        <Element index="0" value=""/>
+        <Domain name="array_list" id="4957.XArrayName.array_list"/>
+      </Property>
+    </Proxy>
+    <Proxy group="representations" type="XYChartRepresentation" id="5030" servers="21">
+      <Property name="AttributeType" id="5030.AttributeType" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="enum" id="5030.AttributeType.enum">
+          <Entry value="0" text="Point Data"/>
+          <Entry value="1" text="Cell Data"/>
+          <Entry value="2" text="Field Data"/>
+          <Entry value="4" text="Vertex Data"/>
+          <Entry value="5" text="Edge Data"/>
+          <Entry value="6" text="Row Data"/>
+        </Domain>
+      </Property>
+      <Property name="Color" id="5030.Color" number_of_elements="3">
+        <Element index="0" value="1"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="1"/>
+        <Domain name="range" id="5030.Color.range"/>
+      </Property>
+      <Property name="CompositeDataSetIndex" id="5030.CompositeDataSetIndex" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="tree" id="5030.CompositeDataSetIndex.tree"/>
+      </Property>
+      <Property name="Input" id="5030.Input" number_of_elements="1">
+        <Proxy value="5007" output_port="0"/>
+        <Domain name="input_type" id="5030.Input.input_type"/>
+      </Property>
+      <Property name="SeriesColor" id="5030.SeriesColor" number_of_elements="200">
+        <Element index="0" value="X(0,0) (X)"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="X(0,1) (X)"/>
+        <Element index="5" value="0.889998"/>
+        <Element index="6" value="0.100008"/>
+        <Element index="7" value="0.110002"/>
+        <Element index="8" value="X(0,10) (X)"/>
+        <Element index="9" value="0.220005"/>
+        <Element index="10" value="0.489998"/>
+        <Element index="11" value="0.719997"/>
+        <Element index="12" value="X(0,11) (X)"/>
+        <Element index="13" value="0.300008"/>
+        <Element index="14" value="0.689998"/>
+        <Element index="15" value="0.289998"/>
+        <Element index="16" value="X(0,12) (X)"/>
+        <Element index="17" value="0.6"/>
+        <Element index="18" value="0.310002"/>
+        <Element index="19" value="0.639994"/>
+        <Element index="20" value="X(0,13) (X)"/>
+        <Element index="21" value="1"/>
+        <Element index="22" value="0.500008"/>
+        <Element index="23" value="0"/>
+        <Element index="24" value="X(0,14) (X)"/>
+        <Element index="25" value="0.650004"/>
+        <Element index="26" value="0.340002"/>
+        <Element index="27" value="0.160006"/>
+        <Element index="28" value="X(0,15) (X)"/>
+        <Element index="29" value="0"/>
+        <Element index="30" value="0"/>
+        <Element index="31" value="0"/>
+        <Element index="32" value="X(0,16) (X)"/>
+        <Element index="33" value="0.889998"/>
+        <Element index="34" value="0.100008"/>
+        <Element index="35" value="0.110002"/>
+        <Element index="36" value="X(0,17) (X)"/>
+        <Element index="37" value="0.220005"/>
+        <Element index="38" value="0.489998"/>
+        <Element index="39" value="0.719997"/>
+        <Element index="40" value="X(0,18) (X)"/>
+        <Element index="41" value="0.300008"/>
+        <Element index="42" value="0.689998"/>
+        <Element index="43" value="0.289998"/>
+        <Element index="44" value="X(0,19) (X)"/>
+        <Element index="45" value="0.6"/>
+        <Element index="46" value="0.310002"/>
+        <Element index="47" value="0.639994"/>
+        <Element index="48" value="X(0,2) (X)"/>
+        <Element index="49" value="1"/>
+        <Element index="50" value="0.500008"/>
+        <Element index="51" value="0"/>
+        <Element index="52" value="X(0,20) (X)"/>
+        <Element index="53" value="0.650004"/>
+        <Element index="54" value="0.340002"/>
+        <Element index="55" value="0.160006"/>
+        <Element index="56" value="X(0,21) (X)"/>
+        <Element index="57" value="0"/>
+        <Element index="58" value="0"/>
+        <Element index="59" value="0"/>
+        <Element index="60" value="X(0,22) (X)"/>
+        <Element index="61" value="0.889998"/>
+        <Element index="62" value="0.100008"/>
+        <Element index="63" value="0.110002"/>
+        <Element index="64" value="X(0,23) (X)"/>
+        <Element index="65" value="0.220005"/>
+        <Element index="66" value="0.489998"/>
+        <Element index="67" value="0.719997"/>
+        <Element index="68" value="X(0,24) (X)"/>
+        <Element index="69" value="0.300008"/>
+        <Element index="70" value="0.689998"/>
+        <Element index="71" value="0.289998"/>
+        <Element index="72" value="X(0,25) (X)"/>
+        <Element index="73" value="0.6"/>
+        <Element index="74" value="0.310002"/>
+        <Element index="75" value="0.639994"/>
+        <Element index="76" value="X(0,26) (X)"/>
+        <Element index="77" value="1"/>
+        <Element index="78" value="0.500008"/>
+        <Element index="79" value="0"/>
+        <Element index="80" value="X(0,27) (X)"/>
+        <Element index="81" value="0.650004"/>
+        <Element index="82" value="0.340002"/>
+        <Element index="83" value="0.160006"/>
+        <Element index="84" value="X(0,28) (X)"/>
+        <Element index="85" value="0"/>
+        <Element index="86" value="0"/>
+        <Element index="87" value="0"/>
+        <Element index="88" value="X(0,29) (X)"/>
+        <Element index="89" value="0.889998"/>
+        <Element index="90" value="0.100008"/>
+        <Element index="91" value="0.110002"/>
+        <Element index="92" value="X(0,3) (X)"/>
+        <Element index="93" value="0.220005"/>
+        <Element index="94" value="0.489998"/>
+        <Element index="95" value="0.719997"/>
+        <Element index="96" value="X(0,30) (X)"/>
+        <Element index="97" value="0.300008"/>
+        <Element index="98" value="0.689998"/>
+        <Element index="99" value="0.289998"/>
+        <Element index="100" value="X(0,31) (X)"/>
+        <Element index="101" value="0.6"/>
+        <Element index="102" value="0.310002"/>
+        <Element index="103" value="0.639994"/>
+        <Element index="104" value="X(0,32) (X)"/>
+        <Element index="105" value="1"/>
+        <Element index="106" value="0.500008"/>
+        <Element index="107" value="0"/>
+        <Element index="108" value="X(0,33) (X)"/>
+        <Element index="109" value="0.650004"/>
+        <Element index="110" value="0.340002"/>
+        <Element index="111" value="0.160006"/>
+        <Element index="112" value="X(0,34) (X)"/>
+        <Element index="113" value="0"/>
+        <Element index="114" value="0"/>
+        <Element index="115" value="0"/>
+        <Element index="116" value="X(0,35) (X)"/>
+        <Element index="117" value="0.889998"/>
+        <Element index="118" value="0.100008"/>
+        <Element index="119" value="0.110002"/>
+        <Element index="120" value="X(0,36) (X)"/>
+        <Element index="121" value="0.220005"/>
+        <Element index="122" value="0.489998"/>
+        <Element index="123" value="0.719997"/>
+        <Element index="124" value="X(0,37) (X)"/>
+        <Element index="125" value="0.300008"/>
+        <Element index="126" value="0.689998"/>
+        <Element index="127" value="0.289998"/>
+        <Element index="128" value="X(0,38) (X)"/>
+        <Element index="129" value="0.6"/>
+        <Element index="130" value="0.310002"/>
+        <Element index="131" value="0.639994"/>
+        <Element index="132" value="X(0,39) (X)"/>
+        <Element index="133" value="1"/>
+        <Element index="134" value="0.500008"/>
+        <Element index="135" value="0"/>
+        <Element index="136" value="X(0,4) (X)"/>
+        <Element index="137" value="0.650004"/>
+        <Element index="138" value="0.340002"/>
+        <Element index="139" value="0.160006"/>
+        <Element index="140" value="X(0,40) (X)"/>
+        <Element index="141" value="0"/>
+        <Element index="142" value="0"/>
+        <Element index="143" value="0"/>
+        <Element index="144" value="X(0,41) (X)"/>
+        <Element index="145" value="0.889998"/>
+        <Element index="146" value="0.100008"/>
+        <Element index="147" value="0.110002"/>
+        <Element index="148" value="X(0,42) (X)"/>
+        <Element index="149" value="0.220005"/>
+        <Element index="150" value="0.489998"/>
+        <Element index="151" value="0.719997"/>
+        <Element index="152" value="X(0,43) (X)"/>
+        <Element index="153" value="0.300008"/>
+        <Element index="154" value="0.689998"/>
+        <Element index="155" value="0.289998"/>
+        <Element index="156" value="X(0,44) (X)"/>
+        <Element index="157" value="0.6"/>
+        <Element index="158" value="0.310002"/>
+        <Element index="159" value="0.639994"/>
+        <Element index="160" value="X(0,45) (X)"/>
+        <Element index="161" value="1"/>
+        <Element index="162" value="0.500008"/>
+        <Element index="163" value="0"/>
+        <Element index="164" value="X(0,46) (X)"/>
+        <Element index="165" value="0.650004"/>
+        <Element index="166" value="0.340002"/>
+        <Element index="167" value="0.160006"/>
+        <Element index="168" value="X(0,47) (X)"/>
+        <Element index="169" value="0"/>
+        <Element index="170" value="0"/>
+        <Element index="171" value="0"/>
+        <Element index="172" value="X(0,48) (X)"/>
+        <Element index="173" value="0.889998"/>
+        <Element index="174" value="0.100008"/>
+        <Element index="175" value="0.110002"/>
+        <Element index="176" value="X(0,49) (X)"/>
+        <Element index="177" value="0.220005"/>
+        <Element index="178" value="0.489998"/>
+        <Element index="179" value="0.719997"/>
+        <Element index="180" value="X(0,5) (X)"/>
+        <Element index="181" value="0.300008"/>
+        <Element index="182" value="0.689998"/>
+        <Element index="183" value="0.289998"/>
+        <Element index="184" value="X(0,6) (X)"/>
+        <Element index="185" value="0.6"/>
+        <Element index="186" value="0.310002"/>
+        <Element index="187" value="0.639994"/>
+        <Element index="188" value="X(0,7) (X)"/>
+        <Element index="189" value="1"/>
+        <Element index="190" value="0.500008"/>
+        <Element index="191" value="0"/>
+        <Element index="192" value="X(0,8) (X)"/>
+        <Element index="193" value="0.650004"/>
+        <Element index="194" value="0.340002"/>
+        <Element index="195" value="0.160006"/>
+        <Element index="196" value="X(0,9) (X)"/>
+        <Element index="197" value="0"/>
+        <Element index="198" value="0"/>
+        <Element index="199" value="0"/>
+        <Domain name="array_list" id="5030.SeriesColor.array_list">
+          <String text="X(0,0) (X)"/>
+          <String text="X(0,1) (X)"/>
+          <String text="X(0,10) (X)"/>
+          <String text="X(0,11) (X)"/>
+          <String text="X(0,12) (X)"/>
+          <String text="X(0,13) (X)"/>
+          <String text="X(0,14) (X)"/>
+          <String text="X(0,15) (X)"/>
+          <String text="X(0,16) (X)"/>
+          <String text="X(0,17) (X)"/>
+          <String text="X(0,18) (X)"/>
+          <String text="X(0,19) (X)"/>
+          <String text="X(0,2) (X)"/>
+          <String text="X(0,20) (X)"/>
+          <String text="X(0,21) (X)"/>
+          <String text="X(0,22) (X)"/>
+          <String text="X(0,23) (X)"/>
+          <String text="X(0,24) (X)"/>
+          <String text="X(0,25) (X)"/>
+          <String text="X(0,26) (X)"/>
+          <String text="X(0,27) (X)"/>
+          <String text="X(0,28) (X)"/>
+          <String text="X(0,29) (X)"/>
+          <String text="X(0,3) (X)"/>
+          <String text="X(0,30) (X)"/>
+          <String text="X(0,31) (X)"/>
+          <String text="X(0,32) (X)"/>
+          <String text="X(0,33) (X)"/>
+          <String text="X(0,34) (X)"/>
+          <String text="X(0,35) (X)"/>
+          <String text="X(0,36) (X)"/>
+          <String text="X(0,37) (X)"/>
+          <String text="X(0,38) (X)"/>
+          <String text="X(0,39) (X)"/>
+          <String text="X(0,4) (X)"/>
+          <String text="X(0,40) (X)"/>
+          <String text="X(0,41) (X)"/>
+          <String text="X(0,42) (X)"/>
+          <String text="X(0,43) (X)"/>
+          <String text="X(0,44) (X)"/>
+          <String text="X(0,45) (X)"/>
+          <String text="X(0,46) (X)"/>
+          <String text="X(0,47) (X)"/>
+          <String text="X(0,48) (X)"/>
+          <String text="X(0,49) (X)"/>
+          <String text="X(0,5) (X)"/>
+          <String text="X(0,6) (X)"/>
+          <String text="X(0,7) (X)"/>
+          <String text="X(0,8) (X)"/>
+          <String text="X(0,9) (X)"/>
+        </Domain>
+      </Property>
+      <Property name="SeriesLabel" id="5030.SeriesLabel" number_of_elements="100">
+        <Element index="0" value="X(0,0) (X)"/>
+        <Element index="1" value="X(0,0) (X)"/>
+        <Element index="2" value="X(0,1) (X)"/>
+        <Element index="3" value="X(0,1) (X)"/>
+        <Element index="4" value="X(0,10) (X)"/>
+        <Element index="5" value="X(0,10) (X)"/>
+        <Element index="6" value="X(0,11) (X)"/>
+        <Element index="7" value="X(0,11) (X)"/>
+        <Element index="8" value="X(0,12) (X)"/>
+        <Element index="9" value="X(0,12) (X)"/>
+        <Element index="10" value="X(0,13) (X)"/>
+        <Element index="11" value="X(0,13) (X)"/>
+        <Element index="12" value="X(0,14) (X)"/>
+        <Element index="13" value="X(0,14) (X)"/>
+        <Element index="14" value="X(0,15) (X)"/>
+        <Element index="15" value="X(0,15) (X)"/>
+        <Element index="16" value="X(0,16) (X)"/>
+        <Element index="17" value="X(0,16) (X)"/>
+        <Element index="18" value="X(0,17) (X)"/>
+        <Element index="19" value="X(0,17) (X)"/>
+        <Element index="20" value="X(0,18) (X)"/>
+        <Element index="21" value="X(0,18) (X)"/>
+        <Element index="22" value="X(0,19) (X)"/>
+        <Element index="23" value="X(0,19) (X)"/>
+        <Element index="24" value="X(0,2) (X)"/>
+        <Element index="25" value="X(0,2) (X)"/>
+        <Element index="26" value="X(0,20) (X)"/>
+        <Element index="27" value="X(0,20) (X)"/>
+        <Element index="28" value="X(0,21) (X)"/>
+        <Element index="29" value="X(0,21) (X)"/>
+        <Element index="30" value="X(0,22) (X)"/>
+        <Element index="31" value="X(0,22) (X)"/>
+        <Element index="32" value="X(0,23) (X)"/>
+        <Element index="33" value="X(0,23) (X)"/>
+        <Element index="34" value="X(0,24) (X)"/>
+        <Element index="35" value="X(0,24) (X)"/>
+        <Element index="36" value="X(0,25) (X)"/>
+        <Element index="37" value="X(0,25) (X)"/>
+        <Element index="38" value="X(0,26) (X)"/>
+        <Element index="39" value="X(0,26) (X)"/>
+        <Element index="40" value="X(0,27) (X)"/>
+        <Element index="41" value="X(0,27) (X)"/>
+        <Element index="42" value="X(0,28) (X)"/>
+        <Element index="43" value="X(0,28) (X)"/>
+        <Element index="44" value="X(0,29) (X)"/>
+        <Element index="45" value="X(0,29) (X)"/>
+        <Element index="46" value="X(0,3) (X)"/>
+        <Element index="47" value="X(0,3) (X)"/>
+        <Element index="48" value="X(0,30) (X)"/>
+        <Element index="49" value="X(0,30) (X)"/>
+        <Element index="50" value="X(0,31) (X)"/>
+        <Element index="51" value="X(0,31) (X)"/>
+        <Element index="52" value="X(0,32) (X)"/>
+        <Element index="53" value="X(0,32) (X)"/>
+        <Element index="54" value="X(0,33) (X)"/>
+        <Element index="55" value="X(0,33) (X)"/>
+        <Element index="56" value="X(0,34) (X)"/>
+        <Element index="57" value="X(0,34) (X)"/>
+        <Element index="58" value="X(0,35) (X)"/>
+        <Element index="59" value="X(0,35) (X)"/>
+        <Element index="60" value="X(0,36) (X)"/>
+        <Element index="61" value="X(0,36) (X)"/>
+        <Element index="62" value="X(0,37) (X)"/>
+        <Element index="63" value="X(0,37) (X)"/>
+        <Element index="64" value="X(0,38) (X)"/>
+        <Element index="65" value="X(0,38) (X)"/>
+        <Element index="66" value="X(0,39) (X)"/>
+        <Element index="67" value="X(0,39) (X)"/>
+        <Element index="68" value="X(0,4) (X)"/>
+        <Element index="69" value="X(0,4) (X)"/>
+        <Element index="70" value="X(0,40) (X)"/>
+        <Element index="71" value="X(0,40) (X)"/>
+        <Element index="72" value="X(0,41) (X)"/>
+        <Element index="73" value="X(0,41) (X)"/>
+        <Element index="74" value="X(0,42) (X)"/>
+        <Element index="75" value="X(0,42) (X)"/>
+        <Element index="76" value="X(0,43) (X)"/>
+        <Element index="77" value="X(0,43) (X)"/>
+        <Element index="78" value="X(0,44) (X)"/>
+        <Element index="79" value="X(0,44) (X)"/>
+        <Element index="80" value="X(0,45) (X)"/>
+        <Element index="81" value="X(0,45) (X)"/>
+        <Element index="82" value="X(0,46) (X)"/>
+        <Element index="83" value="X(0,46) (X)"/>
+        <Element index="84" value="X(0,47) (X)"/>
+        <Element index="85" value="X(0,47) (X)"/>
+        <Element index="86" value="X(0,48) (X)"/>
+        <Element index="87" value="X(0,48) (X)"/>
+        <Element index="88" value="X(0,49) (X)"/>
+        <Element index="89" value="X(0,49) (X)"/>
+        <Element index="90" value="X(0,5) (X)"/>
+        <Element index="91" value="X(0,5) (X)"/>
+        <Element index="92" value="X(0,6) (X)"/>
+        <Element index="93" value="X(0,6) (X)"/>
+        <Element index="94" value="X(0,7) (X)"/>
+        <Element index="95" value="X(0,7) (X)"/>
+        <Element index="96" value="X(0,8) (X)"/>
+        <Element index="97" value="X(0,8) (X)"/>
+        <Element index="98" value="X(0,9) (X)"/>
+        <Element index="99" value="X(0,9) (X)"/>
+        <Domain name="array_list" id="5030.SeriesLabel.array_list">
+          <String text="X(0,0) (X)"/>
+          <String text="X(0,1) (X)"/>
+          <String text="X(0,10) (X)"/>
+          <String text="X(0,11) (X)"/>
+          <String text="X(0,12) (X)"/>
+          <String text="X(0,13) (X)"/>
+          <String text="X(0,14) (X)"/>
+          <String text="X(0,15) (X)"/>
+          <String text="X(0,16) (X)"/>
+          <String text="X(0,17) (X)"/>
+          <String text="X(0,18) (X)"/>
+          <String text="X(0,19) (X)"/>
+          <String text="X(0,2) (X)"/>
+          <String text="X(0,20) (X)"/>
+          <String text="X(0,21) (X)"/>
+          <String text="X(0,22) (X)"/>
+          <String text="X(0,23) (X)"/>
+          <String text="X(0,24) (X)"/>
+          <String text="X(0,25) (X)"/>
+          <String text="X(0,26) (X)"/>
+          <String text="X(0,27) (X)"/>
+          <String text="X(0,28) (X)"/>
+          <String text="X(0,29) (X)"/>
+          <String text="X(0,3) (X)"/>
+          <String text="X(0,30) (X)"/>
+          <String text="X(0,31) (X)"/>
+          <String text="X(0,32) (X)"/>
+          <String text="X(0,33) (X)"/>
+          <String text="X(0,34) (X)"/>
+          <String text="X(0,35) (X)"/>
+          <String text="X(0,36) (X)"/>
+          <String text="X(0,37) (X)"/>
+          <String text="X(0,38) (X)"/>
+          <String text="X(0,39) (X)"/>
+          <String text="X(0,4) (X)"/>
+          <String text="X(0,40) (X)"/>
+          <String text="X(0,41) (X)"/>
+          <String text="X(0,42) (X)"/>
+          <String text="X(0,43) (X)"/>
+          <String text="X(0,44) (X)"/>
+          <String text="X(0,45) (X)"/>
+          <String text="X(0,46) (X)"/>
+          <String text="X(0,47) (X)"/>
+          <String text="X(0,48) (X)"/>
+          <String text="X(0,49) (X)"/>
+          <String text="X(0,5) (X)"/>
+          <String text="X(0,6) (X)"/>
+          <String text="X(0,7) (X)"/>
+          <String text="X(0,8) (X)"/>
+          <String text="X(0,9) (X)"/>
+        </Domain>
+      </Property>
+      <Property name="SeriesLabelPrefix" id="5030.SeriesLabelPrefix" number_of_elements="1">
+        <Element index="0" value=""/>
+      </Property>
+      <Property name="SeriesLineStyle" id="5030.SeriesLineStyle" number_of_elements="100">
+        <Element index="0" value="X(0,0) (X)"/>
+        <Element index="1" value="1"/>
+        <Element index="2" value="X(0,1) (X)"/>
+        <Element index="3" value="1"/>
+        <Element index="4" value="X(0,10) (X)"/>
+        <Element index="5" value="1"/>
+        <Element index="6" value="X(0,11) (X)"/>
+        <Element index="7" value="1"/>
+        <Element index="8" value="X(0,12) (X)"/>
+        <Element index="9" value="1"/>
+        <Element index="10" value="X(0,13) (X)"/>
+        <Element index="11" value="1"/>
+        <Element index="12" value="X(0,14) (X)"/>
+        <Element index="13" value="1"/>
+        <Element index="14" value="X(0,15) (X)"/>
+        <Element index="15" value="1"/>
+        <Element index="16" value="X(0,16) (X)"/>
+        <Element index="17" value="1"/>
+        <Element index="18" value="X(0,17) (X)"/>
+        <Element index="19" value="1"/>
+        <Element index="20" value="X(0,18) (X)"/>
+        <Element index="21" value="1"/>
+        <Element index="22" value="X(0,19) (X)"/>
+        <Element index="23" value="1"/>
+        <Element index="24" value="X(0,2) (X)"/>
+        <Element index="25" value="1"/>
+        <Element index="26" value="X(0,20) (X)"/>
+        <Element index="27" value="1"/>
+        <Element index="28" value="X(0,21) (X)"/>
+        <Element index="29" value="1"/>
+        <Element index="30" value="X(0,22) (X)"/>
+        <Element index="31" value="1"/>
+        <Element index="32" value="X(0,23) (X)"/>
+        <Element index="33" value="1"/>
+        <Element index="34" value="X(0,24) (X)"/>
+        <Element index="35" value="1"/>
+        <Element index="36" value="X(0,25) (X)"/>
+        <Element index="37" value="1"/>
+        <Element index="38" value="X(0,26) (X)"/>
+        <Element index="39" value="1"/>
+        <Element index="40" value="X(0,27) (X)"/>
+        <Element index="41" value="1"/>
+        <Element index="42" value="X(0,28) (X)"/>
+        <Element index="43" value="1"/>
+        <Element index="44" value="X(0,29) (X)"/>
+        <Element index="45" value="1"/>
+        <Element index="46" value="X(0,3) (X)"/>
+        <Element index="47" value="1"/>
+        <Element index="48" value="X(0,30) (X)"/>
+        <Element index="49" value="1"/>
+        <Element index="50" value="X(0,31) (X)"/>
+        <Element index="51" value="1"/>
+        <Element index="52" value="X(0,32) (X)"/>
+        <Element index="53" value="1"/>
+        <Element index="54" value="X(0,33) (X)"/>
+        <Element index="55" value="1"/>
+        <Element index="56" value="X(0,34) (X)"/>
+        <Element index="57" value="1"/>
+        <Element index="58" value="X(0,35) (X)"/>
+        <Element index="59" value="1"/>
+        <Element index="60" value="X(0,36) (X)"/>
+        <Element index="61" value="1"/>
+        <Element index="62" value="X(0,37) (X)"/>
+        <Element index="63" value="1"/>
+        <Element index="64" value="X(0,38) (X)"/>
+        <Element index="65" value="1"/>
+        <Element index="66" value="X(0,39) (X)"/>
+        <Element index="67" value="1"/>
+        <Element index="68" value="X(0,4) (X)"/>
+        <Element index="69" value="1"/>
+        <Element index="70" value="X(0,40) (X)"/>
+        <Element index="71" value="1"/>
+        <Element index="72" value="X(0,41) (X)"/>
+        <Element index="73" value="1"/>
+        <Element index="74" value="X(0,42) (X)"/>
+        <Element index="75" value="1"/>
+        <Element index="76" value="X(0,43) (X)"/>
+        <Element index="77" value="1"/>
+        <Element index="78" value="X(0,44) (X)"/>
+        <Element index="79" value="1"/>
+        <Element index="80" value="X(0,45) (X)"/>
+        <Element index="81" value="1"/>
+        <Element index="82" value="X(0,46) (X)"/>
+        <Element index="83" value="1"/>
+        <Element index="84" value="X(0,47) (X)"/>
+        <Element index="85" value="1"/>
+        <Element index="86" value="X(0,48) (X)"/>
+        <Element index="87" value="1"/>
+        <Element index="88" value="X(0,49) (X)"/>
+        <Element index="89" value="1"/>
+        <Element index="90" value="X(0,5) (X)"/>
+        <Element index="91" value="1"/>
+        <Element index="92" value="X(0,6) (X)"/>
+        <Element index="93" value="1"/>
+        <Element index="94" value="X(0,7) (X)"/>
+        <Element index="95" value="1"/>
+        <Element index="96" value="X(0,8) (X)"/>
+        <Element index="97" value="1"/>
+        <Element index="98" value="X(0,9) (X)"/>
+        <Element index="99" value="1"/>
+        <Domain name="array_list" id="5030.SeriesLineStyle.array_list">
+          <String text="X(0,0) (X)"/>
+          <String text="X(0,1) (X)"/>
+          <String text="X(0,10) (X)"/>
+          <String text="X(0,11) (X)"/>
+          <String text="X(0,12) (X)"/>
+          <String text="X(0,13) (X)"/>
+          <String text="X(0,14) (X)"/>
+          <String text="X(0,15) (X)"/>
+          <String text="X(0,16) (X)"/>
+          <String text="X(0,17) (X)"/>
+          <String text="X(0,18) (X)"/>
+          <String text="X(0,19) (X)"/>
+          <String text="X(0,2) (X)"/>
+          <String text="X(0,20) (X)"/>
+          <String text="X(0,21) (X)"/>
+          <String text="X(0,22) (X)"/>
+          <String text="X(0,23) (X)"/>
+          <String text="X(0,24) (X)"/>
+          <String text="X(0,25) (X)"/>
+          <String text="X(0,26) (X)"/>
+          <String text="X(0,27) (X)"/>
+          <String text="X(0,28) (X)"/>
+          <String text="X(0,29) (X)"/>
+          <String text="X(0,3) (X)"/>
+          <String text="X(0,30) (X)"/>
+          <String text="X(0,31) (X)"/>
+          <String text="X(0,32) (X)"/>
+          <String text="X(0,33) (X)"/>
+          <String text="X(0,34) (X)"/>
+          <String text="X(0,35) (X)"/>
+          <String text="X(0,36) (X)"/>
+          <String text="X(0,37) (X)"/>
+          <String text="X(0,38) (X)"/>
+          <String text="X(0,39) (X)"/>
+          <String text="X(0,4) (X)"/>
+          <String text="X(0,40) (X)"/>
+          <String text="X(0,41) (X)"/>
+          <String text="X(0,42) (X)"/>
+          <String text="X(0,43) (X)"/>
+          <String text="X(0,44) (X)"/>
+          <String text="X(0,45) (X)"/>
+          <String text="X(0,46) (X)"/>
+          <String text="X(0,47) (X)"/>
+          <String text="X(0,48) (X)"/>
+          <String text="X(0,49) (X)"/>
+          <String text="X(0,5) (X)"/>
+          <String text="X(0,6) (X)"/>
+          <String text="X(0,7) (X)"/>
+          <String text="X(0,8) (X)"/>
+          <String text="X(0,9) (X)"/>
+        </Domain>
+      </Property>
+      <Property name="SeriesLineThickness" id="5030.SeriesLineThickness" number_of_elements="100">
+        <Element index="0" value="X(0,0) (X)"/>
+        <Element index="1" value="2"/>
+        <Element index="2" value="X(0,1) (X)"/>
+        <Element index="3" value="2"/>
+        <Element index="4" value="X(0,10) (X)"/>
+        <Element index="5" value="2"/>
+        <Element index="6" value="X(0,11) (X)"/>
+        <Element index="7" value="2"/>
+        <Element index="8" value="X(0,12) (X)"/>
+        <Element index="9" value="2"/>
+        <Element index="10" value="X(0,13) (X)"/>
+        <Element index="11" value="2"/>
+        <Element index="12" value="X(0,14) (X)"/>
+        <Element index="13" value="2"/>
+        <Element index="14" value="X(0,15) (X)"/>
+        <Element index="15" value="2"/>
+        <Element index="16" value="X(0,16) (X)"/>
+        <Element index="17" value="2"/>
+        <Element index="18" value="X(0,17) (X)"/>
+        <Element index="19" value="2"/>
+        <Element index="20" value="X(0,18) (X)"/>
+        <Element index="21" value="2"/>
+        <Element index="22" value="X(0,19) (X)"/>
+        <Element index="23" value="2"/>
+        <Element index="24" value="X(0,2) (X)"/>
+        <Element index="25" value="2"/>
+        <Element index="26" value="X(0,20) (X)"/>
+        <Element index="27" value="2"/>
+        <Element index="28" value="X(0,21) (X)"/>
+        <Element index="29" value="2"/>
+        <Element index="30" value="X(0,22) (X)"/>
+        <Element index="31" value="2"/>
+        <Element index="32" value="X(0,23) (X)"/>
+        <Element index="33" value="2"/>
+        <Element index="34" value="X(0,24) (X)"/>
+        <Element index="35" value="2"/>
+        <Element index="36" value="X(0,25) (X)"/>
+        <Element index="37" value="2"/>
+        <Element index="38" value="X(0,26) (X)"/>
+        <Element index="39" value="2"/>
+        <Element index="40" value="X(0,27) (X)"/>
+        <Element index="41" value="2"/>
+        <Element index="42" value="X(0,28) (X)"/>
+        <Element index="43" value="2"/>
+        <Element index="44" value="X(0,29) (X)"/>
+        <Element index="45" value="2"/>
+        <Element index="46" value="X(0,3) (X)"/>
+        <Element index="47" value="2"/>
+        <Element index="48" value="X(0,30) (X)"/>
+        <Element index="49" value="2"/>
+        <Element index="50" value="X(0,31) (X)"/>
+        <Element index="51" value="2"/>
+        <Element index="52" value="X(0,32) (X)"/>
+        <Element index="53" value="2"/>
+        <Element index="54" value="X(0,33) (X)"/>
+        <Element index="55" value="2"/>
+        <Element index="56" value="X(0,34) (X)"/>
+        <Element index="57" value="2"/>
+        <Element index="58" value="X(0,35) (X)"/>
+        <Element index="59" value="2"/>
+        <Element index="60" value="X(0,36) (X)"/>
+        <Element index="61" value="2"/>
+        <Element index="62" value="X(0,37) (X)"/>
+        <Element index="63" value="2"/>
+        <Element index="64" value="X(0,38) (X)"/>
+        <Element index="65" value="2"/>
+        <Element index="66" value="X(0,39) (X)"/>
+        <Element index="67" value="2"/>
+        <Element index="68" value="X(0,4) (X)"/>
+        <Element index="69" value="2"/>
+        <Element index="70" value="X(0,40) (X)"/>
+        <Element index="71" value="2"/>
+        <Element index="72" value="X(0,41) (X)"/>
+        <Element index="73" value="2"/>
+        <Element index="74" value="X(0,42) (X)"/>
+        <Element index="75" value="2"/>
+        <Element index="76" value="X(0,43) (X)"/>
+        <Element index="77" value="2"/>
+        <Element index="78" value="X(0,44) (X)"/>
+        <Element index="79" value="2"/>
+        <Element index="80" value="X(0,45) (X)"/>
+        <Element index="81" value="2"/>
+        <Element index="82" value="X(0,46) (X)"/>
+        <Element index="83" value="2"/>
+        <Element index="84" value="X(0,47) (X)"/>
+        <Element index="85" value="2"/>
+        <Element index="86" value="X(0,48) (X)"/>
+        <Element index="87" value="2"/>
+        <Element index="88" value="X(0,49) (X)"/>
+        <Element index="89" value="2"/>
+        <Element index="90" value="X(0,5) (X)"/>
+        <Element index="91" value="2"/>
+        <Element index="92" value="X(0,6) (X)"/>
+        <Element index="93" value="2"/>
+        <Element index="94" value="X(0,7) (X)"/>
+        <Element index="95" value="2"/>
+        <Element index="96" value="X(0,8) (X)"/>
+        <Element index="97" value="2"/>
+        <Element index="98" value="X(0,9) (X)"/>
+        <Element index="99" value="2"/>
+        <Domain name="array_list" id="5030.SeriesLineThickness.array_list">
+          <String text="X(0,0) (X)"/>
+          <String text="X(0,1) (X)"/>
+          <String text="X(0,10) (X)"/>
+          <String text="X(0,11) (X)"/>
+          <String text="X(0,12) (X)"/>
+          <String text="X(0,13) (X)"/>
+          <String text="X(0,14) (X)"/>
+          <String text="X(0,15) (X)"/>
+          <String text="X(0,16) (X)"/>
+          <String text="X(0,17) (X)"/>
+          <String text="X(0,18) (X)"/>
+          <String text="X(0,19) (X)"/>
+          <String text="X(0,2) (X)"/>
+          <String text="X(0,20) (X)"/>
+          <String text="X(0,21) (X)"/>
+          <String text="X(0,22) (X)"/>
+          <String text="X(0,23) (X)"/>
+          <String text="X(0,24) (X)"/>
+          <String text="X(0,25) (X)"/>
+          <String text="X(0,26) (X)"/>
+          <String text="X(0,27) (X)"/>
+          <String text="X(0,28) (X)"/>
+          <String text="X(0,29) (X)"/>
+          <String text="X(0,3) (X)"/>
+          <String text="X(0,30) (X)"/>
+          <String text="X(0,31) (X)"/>
+          <String text="X(0,32) (X)"/>
+          <String text="X(0,33) (X)"/>
+          <String text="X(0,34) (X)"/>
+          <String text="X(0,35) (X)"/>
+          <String text="X(0,36) (X)"/>
+          <String text="X(0,37) (X)"/>
+          <String text="X(0,38) (X)"/>
+          <String text="X(0,39) (X)"/>
+          <String text="X(0,4) (X)"/>
+          <String text="X(0,40) (X)"/>
+          <String text="X(0,41) (X)"/>
+          <String text="X(0,42) (X)"/>
+          <String text="X(0,43) (X)"/>
+          <String text="X(0,44) (X)"/>
+          <String text="X(0,45) (X)"/>
+          <String text="X(0,46) (X)"/>
+          <String text="X(0,47) (X)"/>
+          <String text="X(0,48) (X)"/>
+          <String text="X(0,49) (X)"/>
+          <String text="X(0,5) (X)"/>
+          <String text="X(0,6) (X)"/>
+          <String text="X(0,7) (X)"/>
+          <String text="X(0,8) (X)"/>
+          <String text="X(0,9) (X)"/>
+        </Domain>
+      </Property>
+      <Property name="SeriesMarkerStyle" id="5030.SeriesMarkerStyle" number_of_elements="100">
+        <Element index="0" value="X(0,0) (X)"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="X(0,1) (X)"/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="X(0,10) (X)"/>
+        <Element index="5" value="0"/>
+        <Element index="6" value="X(0,11) (X)"/>
+        <Element index="7" value="0"/>
+        <Element index="8" value="X(0,12) (X)"/>
+        <Element index="9" value="0"/>
+        <Element index="10" value="X(0,13) (X)"/>
+        <Element index="11" value="0"/>
+        <Element index="12" value="X(0,14) (X)"/>
+        <Element index="13" value="0"/>
+        <Element index="14" value="X(0,15) (X)"/>
+        <Element index="15" value="0"/>
+        <Element index="16" value="X(0,16) (X)"/>
+        <Element index="17" value="0"/>
+        <Element index="18" value="X(0,17) (X)"/>
+        <Element index="19" value="0"/>
+        <Element index="20" value="X(0,18) (X)"/>
+        <Element index="21" value="0"/>
+        <Element index="22" value="X(0,19) (X)"/>
+        <Element index="23" value="0"/>
+        <Element index="24" value="X(0,2) (X)"/>
+        <Element index="25" value="0"/>
+        <Element index="26" value="X(0,20) (X)"/>
+        <Element index="27" value="0"/>
+        <Element index="28" value="X(0,21) (X)"/>
+        <Element index="29" value="0"/>
+        <Element index="30" value="X(0,22) (X)"/>
+        <Element index="31" value="0"/>
+        <Element index="32" value="X(0,23) (X)"/>
+        <Element index="33" value="0"/>
+        <Element index="34" value="X(0,24) (X)"/>
+        <Element index="35" value="0"/>
+        <Element index="36" value="X(0,25) (X)"/>
+        <Element index="37" value="0"/>
+        <Element index="38" value="X(0,26) (X)"/>
+        <Element index="39" value="0"/>
+        <Element index="40" value="X(0,27) (X)"/>
+        <Element index="41" value="0"/>
+        <Element index="42" value="X(0,28) (X)"/>
+        <Element index="43" value="0"/>
+        <Element index="44" value="X(0,29) (X)"/>
+        <Element index="45" value="0"/>
+        <Element index="46" value="X(0,3) (X)"/>
+        <Element index="47" value="0"/>
+        <Element index="48" value="X(0,30) (X)"/>
+        <Element index="49" value="0"/>
+        <Element index="50" value="X(0,31) (X)"/>
+        <Element index="51" value="0"/>
+        <Element index="52" value="X(0,32) (X)"/>
+        <Element index="53" value="0"/>
+        <Element index="54" value="X(0,33) (X)"/>
+        <Element index="55" value="0"/>
+        <Element index="56" value="X(0,34) (X)"/>
+        <Element index="57" value="0"/>
+        <Element index="58" value="X(0,35) (X)"/>
+        <Element index="59" value="0"/>
+        <Element index="60" value="X(0,36) (X)"/>
+        <Element index="61" value="0"/>
+        <Element index="62" value="X(0,37) (X)"/>
+        <Element index="63" value="0"/>
+        <Element index="64" value="X(0,38) (X)"/>
+        <Element index="65" value="0"/>
+        <Element index="66" value="X(0,39) (X)"/>
+        <Element index="67" value="0"/>
+        <Element index="68" value="X(0,4) (X)"/>
+        <Element index="69" value="0"/>
+        <Element index="70" value="X(0,40) (X)"/>
+        <Element index="71" value="0"/>
+        <Element index="72" value="X(0,41) (X)"/>
+        <Element index="73" value="0"/>
+        <Element index="74" value="X(0,42) (X)"/>
+        <Element index="75" value="0"/>
+        <Element index="76" value="X(0,43) (X)"/>
+        <Element index="77" value="0"/>
+        <Element index="78" value="X(0,44) (X)"/>
+        <Element index="79" value="0"/>
+        <Element index="80" value="X(0,45) (X)"/>
+        <Element index="81" value="0"/>
+        <Element index="82" value="X(0,46) (X)"/>
+        <Element index="83" value="0"/>
+        <Element index="84" value="X(0,47) (X)"/>
+        <Element index="85" value="0"/>
+        <Element index="86" value="X(0,48) (X)"/>
+        <Element index="87" value="0"/>
+        <Element index="88" value="X(0,49) (X)"/>
+        <Element index="89" value="0"/>
+        <Element index="90" value="X(0,5) (X)"/>
+        <Element index="91" value="0"/>
+        <Element index="92" value="X(0,6) (X)"/>
+        <Element index="93" value="0"/>
+        <Element index="94" value="X(0,7) (X)"/>
+        <Element index="95" value="0"/>
+        <Element index="96" value="X(0,8) (X)"/>
+        <Element index="97" value="0"/>
+        <Element index="98" value="X(0,9) (X)"/>
+        <Element index="99" value="0"/>
+        <Domain name="array_list" id="5030.SeriesMarkerStyle.array_list">
+          <String text="X(0,0) (X)"/>
+          <String text="X(0,1) (X)"/>
+          <String text="X(0,10) (X)"/>
+          <String text="X(0,11) (X)"/>
+          <String text="X(0,12) (X)"/>
+          <String text="X(0,13) (X)"/>
+          <String text="X(0,14) (X)"/>
+          <String text="X(0,15) (X)"/>
+          <String text="X(0,16) (X)"/>
+          <String text="X(0,17) (X)"/>
+          <String text="X(0,18) (X)"/>
+          <String text="X(0,19) (X)"/>
+          <String text="X(0,2) (X)"/>
+          <String text="X(0,20) (X)"/>
+          <String text="X(0,21) (X)"/>
+          <String text="X(0,22) (X)"/>
+          <String text="X(0,23) (X)"/>
+          <String text="X(0,24) (X)"/>
+          <String text="X(0,25) (X)"/>
+          <String text="X(0,26) (X)"/>
+          <String text="X(0,27) (X)"/>
+          <String text="X(0,28) (X)"/>
+          <String text="X(0,29) (X)"/>
+          <String text="X(0,3) (X)"/>
+          <String text="X(0,30) (X)"/>
+          <String text="X(0,31) (X)"/>
+          <String text="X(0,32) (X)"/>
+          <String text="X(0,33) (X)"/>
+          <String text="X(0,34) (X)"/>
+          <String text="X(0,35) (X)"/>
+          <String text="X(0,36) (X)"/>
+          <String text="X(0,37) (X)"/>
+          <String text="X(0,38) (X)"/>
+          <String text="X(0,39) (X)"/>
+          <String text="X(0,4) (X)"/>
+          <String text="X(0,40) (X)"/>
+          <String text="X(0,41) (X)"/>
+          <String text="X(0,42) (X)"/>
+          <String text="X(0,43) (X)"/>
+          <String text="X(0,44) (X)"/>
+          <String text="X(0,45) (X)"/>
+          <String text="X(0,46) (X)"/>
+          <String text="X(0,47) (X)"/>
+          <String text="X(0,48) (X)"/>
+          <String text="X(0,49) (X)"/>
+          <String text="X(0,5) (X)"/>
+          <String text="X(0,6) (X)"/>
+          <String text="X(0,7) (X)"/>
+          <String text="X(0,8) (X)"/>
+          <String text="X(0,9) (X)"/>
+        </Domain>
+      </Property>
+      <Property name="SeriesPlotCorner" id="5030.SeriesPlotCorner" number_of_elements="100">
+        <Element index="0" value="X(0,0) (X)"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="X(0,1) (X)"/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="X(0,10) (X)"/>
+        <Element index="5" value="0"/>
+        <Element index="6" value="X(0,11) (X)"/>
+        <Element index="7" value="0"/>
+        <Element index="8" value="X(0,12) (X)"/>
+        <Element index="9" value="0"/>
+        <Element index="10" value="X(0,13) (X)"/>
+        <Element index="11" value="0"/>
+        <Element index="12" value="X(0,14) (X)"/>
+        <Element index="13" value="0"/>
+        <Element index="14" value="X(0,15) (X)"/>
+        <Element index="15" value="0"/>
+        <Element index="16" value="X(0,16) (X)"/>
+        <Element index="17" value="0"/>
+        <Element index="18" value="X(0,17) (X)"/>
+        <Element index="19" value="0"/>
+        <Element index="20" value="X(0,18) (X)"/>
+        <Element index="21" value="0"/>
+        <Element index="22" value="X(0,19) (X)"/>
+        <Element index="23" value="0"/>
+        <Element index="24" value="X(0,2) (X)"/>
+        <Element index="25" value="0"/>
+        <Element index="26" value="X(0,20) (X)"/>
+        <Element index="27" value="0"/>
+        <Element index="28" value="X(0,21) (X)"/>
+        <Element index="29" value="0"/>
+        <Element index="30" value="X(0,22) (X)"/>
+        <Element index="31" value="0"/>
+        <Element index="32" value="X(0,23) (X)"/>
+        <Element index="33" value="0"/>
+        <Element index="34" value="X(0,24) (X)"/>
+        <Element index="35" value="0"/>
+        <Element index="36" value="X(0,25) (X)"/>
+        <Element index="37" value="0"/>
+        <Element index="38" value="X(0,26) (X)"/>
+        <Element index="39" value="0"/>
+        <Element index="40" value="X(0,27) (X)"/>
+        <Element index="41" value="0"/>
+        <Element index="42" value="X(0,28) (X)"/>
+        <Element index="43" value="0"/>
+        <Element index="44" value="X(0,29) (X)"/>
+        <Element index="45" value="0"/>
+        <Element index="46" value="X(0,3) (X)"/>
+        <Element index="47" value="0"/>
+        <Element index="48" value="X(0,30) (X)"/>
+        <Element index="49" value="0"/>
+        <Element index="50" value="X(0,31) (X)"/>
+        <Element index="51" value="0"/>
+        <Element index="52" value="X(0,32) (X)"/>
+        <Element index="53" value="0"/>
+        <Element index="54" value="X(0,33) (X)"/>
+        <Element index="55" value="0"/>
+        <Element index="56" value="X(0,34) (X)"/>
+        <Element index="57" value="0"/>
+        <Element index="58" value="X(0,35) (X)"/>
+        <Element index="59" value="0"/>
+        <Element index="60" value="X(0,36) (X)"/>
+        <Element index="61" value="0"/>
+        <Element index="62" value="X(0,37) (X)"/>
+        <Element index="63" value="0"/>
+        <Element index="64" value="X(0,38) (X)"/>
+        <Element index="65" value="0"/>
+        <Element index="66" value="X(0,39) (X)"/>
+        <Element index="67" value="0"/>
+        <Element index="68" value="X(0,4) (X)"/>
+        <Element index="69" value="0"/>
+        <Element index="70" value="X(0,40) (X)"/>
+        <Element index="71" value="0"/>
+        <Element index="72" value="X(0,41) (X)"/>
+        <Element index="73" value="0"/>
+        <Element index="74" value="X(0,42) (X)"/>
+        <Element index="75" value="0"/>
+        <Element index="76" value="X(0,43) (X)"/>
+        <Element index="77" value="0"/>
+        <Element index="78" value="X(0,44) (X)"/>
+        <Element index="79" value="0"/>
+        <Element index="80" value="X(0,45) (X)"/>
+        <Element index="81" value="0"/>
+        <Element index="82" value="X(0,46) (X)"/>
+        <Element index="83" value="0"/>
+        <Element index="84" value="X(0,47) (X)"/>
+        <Element index="85" value="0"/>
+        <Element index="86" value="X(0,48) (X)"/>
+        <Element index="87" value="0"/>
+        <Element index="88" value="X(0,49) (X)"/>
+        <Element index="89" value="0"/>
+        <Element index="90" value="X(0,5) (X)"/>
+        <Element index="91" value="0"/>
+        <Element index="92" value="X(0,6) (X)"/>
+        <Element index="93" value="0"/>
+        <Element index="94" value="X(0,7) (X)"/>
+        <Element index="95" value="0"/>
+        <Element index="96" value="X(0,8) (X)"/>
+        <Element index="97" value="0"/>
+        <Element index="98" value="X(0,9) (X)"/>
+        <Element index="99" value="0"/>
+        <Domain name="array_list" id="5030.SeriesPlotCorner.array_list">
+          <String text="X(0,0) (X)"/>
+          <String text="X(0,1) (X)"/>
+          <String text="X(0,10) (X)"/>
+          <String text="X(0,11) (X)"/>
+          <String text="X(0,12) (X)"/>
+          <String text="X(0,13) (X)"/>
+          <String text="X(0,14) (X)"/>
+          <String text="X(0,15) (X)"/>
+          <String text="X(0,16) (X)"/>
+          <String text="X(0,17) (X)"/>
+          <String text="X(0,18) (X)"/>
+          <String text="X(0,19) (X)"/>
+          <String text="X(0,2) (X)"/>
+          <String text="X(0,20) (X)"/>
+          <String text="X(0,21) (X)"/>
+          <String text="X(0,22) (X)"/>
+          <String text="X(0,23) (X)"/>
+          <String text="X(0,24) (X)"/>
+          <String text="X(0,25) (X)"/>
+          <String text="X(0,26) (X)"/>
+          <String text="X(0,27) (X)"/>
+          <String text="X(0,28) (X)"/>
+          <String text="X(0,29) (X)"/>
+          <String text="X(0,3) (X)"/>
+          <String text="X(0,30) (X)"/>
+          <String text="X(0,31) (X)"/>
+          <String text="X(0,32) (X)"/>
+          <String text="X(0,33) (X)"/>
+          <String text="X(0,34) (X)"/>
+          <String text="X(0,35) (X)"/>
+          <String text="X(0,36) (X)"/>
+          <String text="X(0,37) (X)"/>
+          <String text="X(0,38) (X)"/>
+          <String text="X(0,39) (X)"/>
+          <String text="X(0,4) (X)"/>
+          <String text="X(0,40) (X)"/>
+          <String text="X(0,41) (X)"/>
+          <String text="X(0,42) (X)"/>
+          <String text="X(0,43) (X)"/>
+          <String text="X(0,44) (X)"/>
+          <String text="X(0,45) (X)"/>
+          <String text="X(0,46) (X)"/>
+          <String text="X(0,47) (X)"/>
+          <String text="X(0,48) (X)"/>
+          <String text="X(0,49) (X)"/>
+          <String text="X(0,5) (X)"/>
+          <String text="X(0,6) (X)"/>
+          <String text="X(0,7) (X)"/>
+          <String text="X(0,8) (X)"/>
+          <String text="X(0,9) (X)"/>
+        </Domain>
+      </Property>
+      <Property name="SeriesVisibility" id="5030.SeriesVisibility" number_of_elements="100">
+        <Element index="0" value="X(0,0) (X)"/>
+        <Element index="1" value="1"/>
+        <Element index="2" value="X(0,1) (X)"/>
+        <Element index="3" value="1"/>
+        <Element index="4" value="X(0,10) (X)"/>
+        <Element index="5" value="1"/>
+        <Element index="6" value="X(0,11) (X)"/>
+        <Element index="7" value="1"/>
+        <Element index="8" value="X(0,12) (X)"/>
+        <Element index="9" value="1"/>
+        <Element index="10" value="X(0,13) (X)"/>
+        <Element index="11" value="1"/>
+        <Element index="12" value="X(0,14) (X)"/>
+        <Element index="13" value="1"/>
+        <Element index="14" value="X(0,15) (X)"/>
+        <Element index="15" value="1"/>
+        <Element index="16" value="X(0,16) (X)"/>
+        <Element index="17" value="1"/>
+        <Element index="18" value="X(0,17) (X)"/>
+        <Element index="19" value="1"/>
+        <Element index="20" value="X(0,18) (X)"/>
+        <Element index="21" value="1"/>
+        <Element index="22" value="X(0,19) (X)"/>
+        <Element index="23" value="1"/>
+        <Element index="24" value="X(0,2) (X)"/>
+        <Element index="25" value="1"/>
+        <Element index="26" value="X(0,20) (X)"/>
+        <Element index="27" value="1"/>
+        <Element index="28" value="X(0,21) (X)"/>
+        <Element index="29" value="1"/>
+        <Element index="30" value="X(0,22) (X)"/>
+        <Element index="31" value="1"/>
+        <Element index="32" value="X(0,23) (X)"/>
+        <Element index="33" value="1"/>
+        <Element index="34" value="X(0,24) (X)"/>
+        <Element index="35" value="1"/>
+        <Element index="36" value="X(0,25) (X)"/>
+        <Element index="37" value="1"/>
+        <Element index="38" value="X(0,26) (X)"/>
+        <Element index="39" value="1"/>
+        <Element index="40" value="X(0,27) (X)"/>
+        <Element index="41" value="1"/>
+        <Element index="42" value="X(0,28) (X)"/>
+        <Element index="43" value="1"/>
+        <Element index="44" value="X(0,29) (X)"/>
+        <Element index="45" value="1"/>
+        <Element index="46" value="X(0,3) (X)"/>
+        <Element index="47" value="1"/>
+        <Element index="48" value="X(0,30) (X)"/>
+        <Element index="49" value="1"/>
+        <Element index="50" value="X(0,31) (X)"/>
+        <Element index="51" value="1"/>
+        <Element index="52" value="X(0,32) (X)"/>
+        <Element index="53" value="1"/>
+        <Element index="54" value="X(0,33) (X)"/>
+        <Element index="55" value="1"/>
+        <Element index="56" value="X(0,34) (X)"/>
+        <Element index="57" value="1"/>
+        <Element index="58" value="X(0,35) (X)"/>
+        <Element index="59" value="1"/>
+        <Element index="60" value="X(0,36) (X)"/>
+        <Element index="61" value="1"/>
+        <Element index="62" value="X(0,37) (X)"/>
+        <Element index="63" value="1"/>
+        <Element index="64" value="X(0,38) (X)"/>
+        <Element index="65" value="1"/>
+        <Element index="66" value="X(0,39) (X)"/>
+        <Element index="67" value="1"/>
+        <Element index="68" value="X(0,4) (X)"/>
+        <Element index="69" value="1"/>
+        <Element index="70" value="X(0,40) (X)"/>
+        <Element index="71" value="1"/>
+        <Element index="72" value="X(0,41) (X)"/>
+        <Element index="73" value="1"/>
+        <Element index="74" value="X(0,42) (X)"/>
+        <Element index="75" value="1"/>
+        <Element index="76" value="X(0,43) (X)"/>
+        <Element index="77" value="1"/>
+        <Element index="78" value="X(0,44) (X)"/>
+        <Element index="79" value="1"/>
+        <Element index="80" value="X(0,45) (X)"/>
+        <Element index="81" value="1"/>
+        <Element index="82" value="X(0,46) (X)"/>
+        <Element index="83" value="1"/>
+        <Element index="84" value="X(0,47) (X)"/>
+        <Element index="85" value="1"/>
+        <Element index="86" value="X(0,48) (X)"/>
+        <Element index="87" value="1"/>
+        <Element index="88" value="X(0,49) (X)"/>
+        <Element index="89" value="1"/>
+        <Element index="90" value="X(0,5) (X)"/>
+        <Element index="91" value="1"/>
+        <Element index="92" value="X(0,6) (X)"/>
+        <Element index="93" value="1"/>
+        <Element index="94" value="X(0,7) (X)"/>
+        <Element index="95" value="1"/>
+        <Element index="96" value="X(0,8) (X)"/>
+        <Element index="97" value="1"/>
+        <Element index="98" value="X(0,9) (X)"/>
+        <Element index="99" value="1"/>
+        <Domain name="array_list" id="5030.SeriesVisibility.array_list">
+          <String text="X(0,0) (X)"/>
+          <String text="X(0,1) (X)"/>
+          <String text="X(0,10) (X)"/>
+          <String text="X(0,11) (X)"/>
+          <String text="X(0,12) (X)"/>
+          <String text="X(0,13) (X)"/>
+          <String text="X(0,14) (X)"/>
+          <String text="X(0,15) (X)"/>
+          <String text="X(0,16) (X)"/>
+          <String text="X(0,17) (X)"/>
+          <String text="X(0,18) (X)"/>
+          <String text="X(0,19) (X)"/>
+          <String text="X(0,2) (X)"/>
+          <String text="X(0,20) (X)"/>
+          <String text="X(0,21) (X)"/>
+          <String text="X(0,22) (X)"/>
+          <String text="X(0,23) (X)"/>
+          <String text="X(0,24) (X)"/>
+          <String text="X(0,25) (X)"/>
+          <String text="X(0,26) (X)"/>
+          <String text="X(0,27) (X)"/>
+          <String text="X(0,28) (X)"/>
+          <String text="X(0,29) (X)"/>
+          <String text="X(0,3) (X)"/>
+          <String text="X(0,30) (X)"/>
+          <String text="X(0,31) (X)"/>
+          <String text="X(0,32) (X)"/>
+          <String text="X(0,33) (X)"/>
+          <String text="X(0,34) (X)"/>
+          <String text="X(0,35) (X)"/>
+          <String text="X(0,36) (X)"/>
+          <String text="X(0,37) (X)"/>
+          <String text="X(0,38) (X)"/>
+          <String text="X(0,39) (X)"/>
+          <String text="X(0,4) (X)"/>
+          <String text="X(0,40) (X)"/>
+          <String text="X(0,41) (X)"/>
+          <String text="X(0,42) (X)"/>
+          <String text="X(0,43) (X)"/>
+          <String text="X(0,44) (X)"/>
+          <String text="X(0,45) (X)"/>
+          <String text="X(0,46) (X)"/>
+          <String text="X(0,47) (X)"/>
+          <String text="X(0,48) (X)"/>
+          <String text="X(0,49) (X)"/>
+          <String text="X(0,5) (X)"/>
+          <String text="X(0,6) (X)"/>
+          <String text="X(0,7) (X)"/>
+          <String text="X(0,8) (X)"/>
+          <String text="X(0,9) (X)"/>
+        </Domain>
+      </Property>
+      <Property name="UseIndexForXAxis" id="5030.UseIndexForXAxis" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="5030.UseIndexForXAxis.bool"/>
+      </Property>
+      <Property name="Visibility" id="5030.Visibility" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="5030.Visibility.bool"/>
+      </Property>
+      <Property name="XArrayName" id="5030.XArrayName" number_of_elements="1">
+        <Element index="0" value=""/>
+        <Domain name="array_list" id="5030.XArrayName.array_list"/>
+      </Property>
+    </Proxy>
+    <Proxy group="filters" type="SplitImageData" id="4707" servers="1">
+      <Property name="Class" id="4707.Class" number_of_elements="1">
+        <Element index="0" value="ImageDataSplitter"/>
+      </Property>
+      <Property name="Format" id="4707.Format" number_of_elements="1">
+        <Element index="0" value="{k}({i},{j})"/>
+      </Property>
+      <Property name="Input" id="4707.Input" number_of_elements="1">
+        <Proxy value="4485" output_port="0"/>
+        <Domain name="groups" id="4707.Input.groups"/>
+        <Domain name="input_type" id="4707.Input.input_type"/>
+      </Property>
+      <Property name="Module" id="4707.Module" number_of_elements="1">
+        <Element index="0" value="splitimagedata"/>
+      </Property>
+    </Proxy>
+    <Proxy group="filters" type="SplitImageData" id="5007" servers="1">
+      <Property name="Class" id="5007.Class" number_of_elements="1">
+        <Element index="0" value="ImageDataSplitter"/>
+      </Property>
+      <Property name="Format" id="5007.Format" number_of_elements="1">
+        <Element index="0" value="{k}({i},{j})"/>
+      </Property>
+      <Property name="Input" id="5007.Input" number_of_elements="1">
+        <Proxy value="4995" output_port="0"/>
+        <Domain name="groups" id="5007.Input.groups"/>
+        <Domain name="input_type" id="5007.Input.input_type"/>
+      </Property>
+      <Property name="Module" id="5007.Module" number_of_elements="1">
+        <Element index="0" value="splitimagedata"/>
+      </Property>
+    </Proxy>
+    <Proxy group="sources" type="PythonClassASDFReader" id="4995" servers="1">
+      <Property name="Class" id="4995.Class" number_of_elements="1">
+        <Element index="0" value="ASDFReader"/>
+      </Property>
+      <Property name="FileName" id="4995.FileName" number_of_elements="1">
+        <Element index="0" value="/Users/bob.pepin/Documents/Averaging/output_gradPt/XY_dynamics=doublewell,x0=-0.20000000000000018,y0=0.0.asdf"/>
+        <Domain name="files" id="4995.FileName.files"/>
+      </Property>
+      <Property name="Module" id="4995.Module" number_of_elements="1">
+        <Element index="0" value="asdfreader"/>
+      </Property>
+    </Proxy>
+    <Proxy group="sources" type="PythonClassASDFReader" id="4485" servers="1">
+      <Property name="Class" id="4485.Class" number_of_elements="1">
+        <Element index="0" value="ASDFReader"/>
+      </Property>
+      <Property name="FileName" id="4485.FileName" number_of_elements="1">
+        <Element index="0" value="/Users/bob.pepin/Documents/Averaging/output_gradPt/XY_dynamics=doublewell,x0=-1.0,y0=0.0.asdf"/>
+        <Domain name="files" id="4485.FileName.files"/>
+      </Property>
+      <Property name="Module" id="4485.Module" number_of_elements="1">
+        <Element index="0" value="asdfreader"/>
+      </Property>
+    </Proxy>
+    <Proxy group="misc" type="TimeKeeper" id="259" servers="16">
+      <Property name="SuppressedTimeSources" id="259.SuppressedTimeSources"/>
+      <Property name="Time" id="259.Time" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="range" id="259.Time.range"/>
+      </Property>
+      <Property name="TimeLabel" id="259.TimeLabel" number_of_elements="1">
+        <Element index="0" value="Time"/>
+      </Property>
+      <Property name="TimeRange" id="259.TimeRange" number_of_elements="2">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+      </Property>
+      <Property name="TimeSources" id="259.TimeSources" number_of_elements="4">
+        <Proxy value="4485"/>
+        <Proxy value="4707"/>
+        <Proxy value="4995"/>
+        <Proxy value="5007"/>
+      </Property>
+      <Property name="TimestepValues" id="259.TimestepValues"/>
+      <Property name="Views" id="259.Views" number_of_elements="1">
+        <Proxy value="4923"/>
+      </Property>
+    </Proxy>
+    <Proxy group="views" type="XYChartView" id="4923" servers="21">
+      <Property name="BottomAxisColor" id="4923.BottomAxisColor" number_of_elements="3">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Domain name="range" id="4923.BottomAxisColor.range"/>
+      </Property>
+      <Property name="BottomAxisGridColor" id="4923.BottomAxisGridColor" number_of_elements="3">
+        <Element index="0" value="0.95"/>
+        <Element index="1" value="0.95"/>
+        <Element index="2" value="0.95"/>
+        <Domain name="range" id="4923.BottomAxisGridColor.range"/>
+      </Property>
+      <Property name="BottomAxisLabelBold" id="4923.BottomAxisLabelBold" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.BottomAxisLabelBold.bool"/>
+      </Property>
+      <Property name="BottomAxisLabelColor" id="4923.BottomAxisLabelColor" number_of_elements="3">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Domain name="range" id="4923.BottomAxisLabelColor.range"/>
+      </Property>
+      <Property name="BottomAxisLabelFontFamily" id="4923.BottomAxisLabelFontFamily" number_of_elements="1">
+        <Element index="0" value="Arial"/>
+        <Domain name="list" id="4923.BottomAxisLabelFontFamily.list">
+          <String text="Arial"/>
+          <String text="Courier"/>
+          <String text="Times"/>
+        </Domain>
+      </Property>
+      <Property name="BottomAxisLabelFontSize" id="4923.BottomAxisLabelFontSize" number_of_elements="1">
+        <Element index="0" value="12"/>
+      </Property>
+      <Property name="BottomAxisLabelItalic" id="4923.BottomAxisLabelItalic" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.BottomAxisLabelItalic.bool"/>
+      </Property>
+      <Property name="BottomAxisLabelNotation" id="4923.BottomAxisLabelNotation" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="enum" id="4923.BottomAxisLabelNotation.enum">
+          <Entry value="0" text="Mixed"/>
+          <Entry value="1" text="Scientific"/>
+          <Entry value="2" text="Fixed"/>
+        </Domain>
+      </Property>
+      <Property name="BottomAxisLabelPrecision" id="4923.BottomAxisLabelPrecision" number_of_elements="1">
+        <Element index="0" value="2"/>
+        <Domain name="range" id="4923.BottomAxisLabelPrecision.range"/>
+      </Property>
+      <Property name="BottomAxisLabels" id="4923.BottomAxisLabels">
+        <Domain name="scalar_range" id="4923.BottomAxisLabels.scalar_range"/>
+      </Property>
+      <Property name="BottomAxisLogScale" id="4923.BottomAxisLogScale" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.BottomAxisLogScale.bool"/>
+      </Property>
+      <Property name="BottomAxisRangeMaximum" id="4923.BottomAxisRangeMaximum" number_of_elements="1">
+        <Element index="0" value="50"/>
+      </Property>
+      <Property name="BottomAxisRangeMinimum" id="4923.BottomAxisRangeMinimum" number_of_elements="1">
+        <Element index="0" value="0"/>
+      </Property>
+      <Property name="BottomAxisTitle" id="4923.BottomAxisTitle" number_of_elements="1">
+        <Element index="0" value=""/>
+      </Property>
+      <Property name="BottomAxisTitleBold" id="4923.BottomAxisTitleBold" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="4923.BottomAxisTitleBold.bool"/>
+      </Property>
+      <Property name="BottomAxisTitleColor" id="4923.BottomAxisTitleColor" number_of_elements="3">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Domain name="range" id="4923.BottomAxisTitleColor.range"/>
+      </Property>
+      <Property name="BottomAxisTitleFontFamily" id="4923.BottomAxisTitleFontFamily" number_of_elements="1">
+        <Element index="0" value="Arial"/>
+        <Domain name="list" id="4923.BottomAxisTitleFontFamily.list">
+          <String text="Arial"/>
+          <String text="Courier"/>
+          <String text="Times"/>
+        </Domain>
+      </Property>
+      <Property name="BottomAxisTitleFontSize" id="4923.BottomAxisTitleFontSize" number_of_elements="1">
+        <Element index="0" value="12"/>
+      </Property>
+      <Property name="BottomAxisTitleItalic" id="4923.BottomAxisTitleItalic" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.BottomAxisTitleItalic.bool"/>
+      </Property>
+      <Property name="BottomAxisUseCustomLabels" id="4923.BottomAxisUseCustomLabels" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.BottomAxisUseCustomLabels.bool"/>
+      </Property>
+      <Property name="BottomAxisUseCustomRange" id="4923.BottomAxisUseCustomRange" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.BottomAxisUseCustomRange.bool"/>
+      </Property>
+      <Property name="CacheKey" id="4923.CacheKey" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="range" id="4923.CacheKey.range"/>
+      </Property>
+      <Property name="ChartTitle" id="4923.ChartTitle" number_of_elements="1">
+        <Element index="0" value=""/>
+      </Property>
+      <Property name="ChartTitleAlignment" id="4923.ChartTitleAlignment" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="enum" id="4923.ChartTitleAlignment.enum">
+          <Entry value="0" text="Left"/>
+          <Entry value="1" text="Center"/>
+          <Entry value="2" text="Right"/>
+        </Domain>
+      </Property>
+      <Property name="ChartTitleBold" id="4923.ChartTitleBold" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.ChartTitleBold.bool"/>
+      </Property>
+      <Property name="ChartTitleColor" id="4923.ChartTitleColor" number_of_elements="3">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Domain name="range" id="4923.ChartTitleColor.range"/>
+      </Property>
+      <Property name="ChartTitleFontFamily" id="4923.ChartTitleFontFamily" number_of_elements="1">
+        <Element index="0" value="Arial"/>
+        <Domain name="list" id="4923.ChartTitleFontFamily.list">
+          <String text="Arial"/>
+          <String text="Courier"/>
+          <String text="Times"/>
+        </Domain>
+      </Property>
+      <Property name="ChartTitleFontSize" id="4923.ChartTitleFontSize" number_of_elements="1">
+        <Element index="0" value="14"/>
+      </Property>
+      <Property name="ChartTitleItalic" id="4923.ChartTitleItalic" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.ChartTitleItalic.bool"/>
+      </Property>
+      <Property name="HideTimeMarker" id="4923.HideTimeMarker" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.HideTimeMarker.bool"/>
+      </Property>
+      <Property name="LeftAxisColor" id="4923.LeftAxisColor" number_of_elements="3">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Domain name="range" id="4923.LeftAxisColor.range"/>
+      </Property>
+      <Property name="LeftAxisGridColor" id="4923.LeftAxisGridColor" number_of_elements="3">
+        <Element index="0" value="0.95"/>
+        <Element index="1" value="0.95"/>
+        <Element index="2" value="0.95"/>
+        <Domain name="range" id="4923.LeftAxisGridColor.range"/>
+      </Property>
+      <Property name="LeftAxisLabelBold" id="4923.LeftAxisLabelBold" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.LeftAxisLabelBold.bool"/>
+      </Property>
+      <Property name="LeftAxisLabelColor" id="4923.LeftAxisLabelColor" number_of_elements="3">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Domain name="range" id="4923.LeftAxisLabelColor.range"/>
+      </Property>
+      <Property name="LeftAxisLabelFontFamily" id="4923.LeftAxisLabelFontFamily" number_of_elements="1">
+        <Element index="0" value="Arial"/>
+        <Domain name="list" id="4923.LeftAxisLabelFontFamily.list">
+          <String text="Arial"/>
+          <String text="Courier"/>
+          <String text="Times"/>
+        </Domain>
+      </Property>
+      <Property name="LeftAxisLabelFontSize" id="4923.LeftAxisLabelFontSize" number_of_elements="1">
+        <Element index="0" value="12"/>
+      </Property>
+      <Property name="LeftAxisLabelItalic" id="4923.LeftAxisLabelItalic" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.LeftAxisLabelItalic.bool"/>
+      </Property>
+      <Property name="LeftAxisLabelNotation" id="4923.LeftAxisLabelNotation" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="enum" id="4923.LeftAxisLabelNotation.enum">
+          <Entry value="0" text="Mixed"/>
+          <Entry value="1" text="Scientific"/>
+          <Entry value="2" text="Fixed"/>
+        </Domain>
+      </Property>
+      <Property name="LeftAxisLabelPrecision" id="4923.LeftAxisLabelPrecision" number_of_elements="1">
+        <Element index="0" value="2"/>
+        <Domain name="range" id="4923.LeftAxisLabelPrecision.range"/>
+      </Property>
+      <Property name="LeftAxisLabels" id="4923.LeftAxisLabels">
+        <Domain name="scalar_range" id="4923.LeftAxisLabels.scalar_range"/>
+      </Property>
+      <Property name="LeftAxisLogScale" id="4923.LeftAxisLogScale" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.LeftAxisLogScale.bool"/>
+      </Property>
+      <Property name="LeftAxisRangeMaximum" id="4923.LeftAxisRangeMaximum" number_of_elements="1">
+        <Element index="0" value="4"/>
+      </Property>
+      <Property name="LeftAxisRangeMinimum" id="4923.LeftAxisRangeMinimum" number_of_elements="1">
+        <Element index="0" value="-4"/>
+      </Property>
+      <Property name="LeftAxisTitle" id="4923.LeftAxisTitle" number_of_elements="1">
+        <Element index="0" value=""/>
+      </Property>
+      <Property name="LeftAxisTitleBold" id="4923.LeftAxisTitleBold" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="4923.LeftAxisTitleBold.bool"/>
+      </Property>
+      <Property name="LeftAxisTitleColor" id="4923.LeftAxisTitleColor" number_of_elements="3">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Domain name="range" id="4923.LeftAxisTitleColor.range"/>
+      </Property>
+      <Property name="LeftAxisTitleFontFamily" id="4923.LeftAxisTitleFontFamily" number_of_elements="1">
+        <Element index="0" value="Arial"/>
+        <Domain name="list" id="4923.LeftAxisTitleFontFamily.list">
+          <String text="Arial"/>
+          <String text="Courier"/>
+          <String text="Times"/>
+        </Domain>
+      </Property>
+      <Property name="LeftAxisTitleFontSize" id="4923.LeftAxisTitleFontSize" number_of_elements="1">
+        <Element index="0" value="12"/>
+      </Property>
+      <Property name="LeftAxisTitleItalic" id="4923.LeftAxisTitleItalic" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.LeftAxisTitleItalic.bool"/>
+      </Property>
+      <Property name="LeftAxisUseCustomLabels" id="4923.LeftAxisUseCustomLabels" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.LeftAxisUseCustomLabels.bool"/>
+      </Property>
+      <Property name="LeftAxisUseCustomRange" id="4923.LeftAxisUseCustomRange" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.LeftAxisUseCustomRange.bool"/>
+      </Property>
+      <Property name="LegendBold" id="4923.LegendBold" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.LegendBold.bool"/>
+      </Property>
+      <Property name="LegendFontFamily" id="4923.LegendFontFamily" number_of_elements="1">
+        <Element index="0" value="Arial"/>
+        <Domain name="list" id="4923.LegendFontFamily.list">
+          <String text="Arial"/>
+          <String text="Courier"/>
+          <String text="Times"/>
+        </Domain>
+      </Property>
+      <Property name="LegendFontSize" id="4923.LegendFontSize" number_of_elements="1">
+        <Element index="0" value="12"/>
+      </Property>
+      <Property name="LegendItalic" id="4923.LegendItalic" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.LegendItalic.bool"/>
+      </Property>
+      <Property name="LegendLocation" id="4923.LegendLocation" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="enum" id="4923.LegendLocation.enum">
+          <Entry value="0" text="TopLeft"/>
+          <Entry value="1" text="TopRight"/>
+          <Entry value="2" text="BottomRight"/>
+          <Entry value="3" text="BottomLeft"/>
+          <Entry value="4" text="Left"/>
+          <Entry value="5" text="Top"/>
+          <Entry value="6" text="Right"/>
+          <Entry value="7" text="Bottom"/>
+          <Entry value="8" text="Custom"/>
+        </Domain>
+      </Property>
+      <Property name="LegendPosition" id="4923.LegendPosition" number_of_elements="2">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+      </Property>
+      <Property name="PPI" id="4923.PPI" number_of_elements="1">
+        <Element index="0" value="96"/>
+      </Property>
+      <Property name="Representations" id="4923.Representations" number_of_elements="2">
+        <Proxy value="4957"/>
+        <Proxy value="5030"/>
+      </Property>
+      <Property name="RightAxisColor" id="4923.RightAxisColor" number_of_elements="3">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Domain name="range" id="4923.RightAxisColor.range"/>
+      </Property>
+      <Property name="RightAxisGridColor" id="4923.RightAxisGridColor" number_of_elements="3">
+        <Element index="0" value="0.95"/>
+        <Element index="1" value="0.95"/>
+        <Element index="2" value="0.95"/>
+        <Domain name="range" id="4923.RightAxisGridColor.range"/>
+      </Property>
+      <Property name="RightAxisLabelBold" id="4923.RightAxisLabelBold" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.RightAxisLabelBold.bool"/>
+      </Property>
+      <Property name="RightAxisLabelColor" id="4923.RightAxisLabelColor" number_of_elements="3">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Domain name="range" id="4923.RightAxisLabelColor.range"/>
+      </Property>
+      <Property name="RightAxisLabelFontFamily" id="4923.RightAxisLabelFontFamily" number_of_elements="1">
+        <Element index="0" value="Arial"/>
+        <Domain name="list" id="4923.RightAxisLabelFontFamily.list">
+          <String text="Arial"/>
+          <String text="Courier"/>
+          <String text="Times"/>
+        </Domain>
+      </Property>
+      <Property name="RightAxisLabelFontSize" id="4923.RightAxisLabelFontSize" number_of_elements="1">
+        <Element index="0" value="12"/>
+      </Property>
+      <Property name="RightAxisLabelItalic" id="4923.RightAxisLabelItalic" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.RightAxisLabelItalic.bool"/>
+      </Property>
+      <Property name="RightAxisLabelNotation" id="4923.RightAxisLabelNotation" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="enum" id="4923.RightAxisLabelNotation.enum">
+          <Entry value="0" text="Mixed"/>
+          <Entry value="1" text="Scientific"/>
+          <Entry value="2" text="Fixed"/>
+        </Domain>
+      </Property>
+      <Property name="RightAxisLabelPrecision" id="4923.RightAxisLabelPrecision" number_of_elements="1">
+        <Element index="0" value="2"/>
+        <Domain name="range" id="4923.RightAxisLabelPrecision.range"/>
+      </Property>
+      <Property name="RightAxisLabels" id="4923.RightAxisLabels">
+        <Domain name="scalar_range" id="4923.RightAxisLabels.scalar_range"/>
+      </Property>
+      <Property name="RightAxisLogScale" id="4923.RightAxisLogScale" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.RightAxisLogScale.bool"/>
+      </Property>
+      <Property name="RightAxisRangeMaximum" id="4923.RightAxisRangeMaximum" number_of_elements="1">
+        <Element index="0" value="6.66"/>
+      </Property>
+      <Property name="RightAxisRangeMinimum" id="4923.RightAxisRangeMinimum" number_of_elements="1">
+        <Element index="0" value="0"/>
+      </Property>
+      <Property name="RightAxisTitle" id="4923.RightAxisTitle" number_of_elements="1">
+        <Element index="0" value=""/>
+      </Property>
+      <Property name="RightAxisTitleBold" id="4923.RightAxisTitleBold" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="4923.RightAxisTitleBold.bool"/>
+      </Property>
+      <Property name="RightAxisTitleColor" id="4923.RightAxisTitleColor" number_of_elements="3">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Domain name="range" id="4923.RightAxisTitleColor.range"/>
+      </Property>
+      <Property name="RightAxisTitleFontFamily" id="4923.RightAxisTitleFontFamily" number_of_elements="1">
+        <Element index="0" value="Arial"/>
+        <Domain name="list" id="4923.RightAxisTitleFontFamily.list">
+          <String text="Arial"/>
+          <String text="Courier"/>
+          <String text="Times"/>
+        </Domain>
+      </Property>
+      <Property name="RightAxisTitleFontSize" id="4923.RightAxisTitleFontSize" number_of_elements="1">
+        <Element index="0" value="12"/>
+      </Property>
+      <Property name="RightAxisTitleItalic" id="4923.RightAxisTitleItalic" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.RightAxisTitleItalic.bool"/>
+      </Property>
+      <Property name="RightAxisUseCustomLabels" id="4923.RightAxisUseCustomLabels" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.RightAxisUseCustomLabels.bool"/>
+      </Property>
+      <Property name="RightAxisUseCustomRange" id="4923.RightAxisUseCustomRange" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.RightAxisUseCustomRange.bool"/>
+      </Property>
+      <Property name="ShowBottomAxisGrid" id="4923.ShowBottomAxisGrid" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="4923.ShowBottomAxisGrid.bool"/>
+      </Property>
+      <Property name="ShowBottomAxisLabels" id="4923.ShowBottomAxisLabels" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="4923.ShowBottomAxisLabels.bool"/>
+      </Property>
+      <Property name="ShowLeftAxisGrid" id="4923.ShowLeftAxisGrid" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="4923.ShowLeftAxisGrid.bool"/>
+      </Property>
+      <Property name="ShowLeftAxisLabels" id="4923.ShowLeftAxisLabels" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="4923.ShowLeftAxisLabels.bool"/>
+      </Property>
+      <Property name="ShowLegend" id="4923.ShowLegend" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="4923.ShowLegend.bool"/>
+      </Property>
+      <Property name="ShowRightAxisGrid" id="4923.ShowRightAxisGrid" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="4923.ShowRightAxisGrid.bool"/>
+      </Property>
+      <Property name="ShowRightAxisLabels" id="4923.ShowRightAxisLabels" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="4923.ShowRightAxisLabels.bool"/>
+      </Property>
+      <Property name="ShowTopAxisGrid" id="4923.ShowTopAxisGrid" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="4923.ShowTopAxisGrid.bool"/>
+      </Property>
+      <Property name="ShowTopAxisLabels" id="4923.ShowTopAxisLabels" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="4923.ShowTopAxisLabels.bool"/>
+      </Property>
+      <Property name="SortByXAxis" id="4923.SortByXAxis" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.SortByXAxis.bool"/>
+      </Property>
+      <Property name="TooltipNotation" id="4923.TooltipNotation" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="enum" id="4923.TooltipNotation.enum">
+          <Entry value="0" text="Mixed"/>
+          <Entry value="1" text="Scientific"/>
+          <Entry value="2" text="Fixed"/>
+        </Domain>
+      </Property>
+      <Property name="TooltipPrecision" id="4923.TooltipPrecision" number_of_elements="1">
+        <Element index="0" value="6"/>
+        <Domain name="range" id="4923.TooltipPrecision.range"/>
+      </Property>
+      <Property name="TopAxisColor" id="4923.TopAxisColor" number_of_elements="3">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Domain name="range" id="4923.TopAxisColor.range"/>
+      </Property>
+      <Property name="TopAxisGridColor" id="4923.TopAxisGridColor" number_of_elements="3">
+        <Element index="0" value="0.95"/>
+        <Element index="1" value="0.95"/>
+        <Element index="2" value="0.95"/>
+        <Domain name="range" id="4923.TopAxisGridColor.range"/>
+      </Property>
+      <Property name="TopAxisLabelBold" id="4923.TopAxisLabelBold" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.TopAxisLabelBold.bool"/>
+      </Property>
+      <Property name="TopAxisLabelColor" id="4923.TopAxisLabelColor" number_of_elements="3">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Domain name="range" id="4923.TopAxisLabelColor.range"/>
+      </Property>
+      <Property name="TopAxisLabelFontFamily" id="4923.TopAxisLabelFontFamily" number_of_elements="1">
+        <Element index="0" value="Arial"/>
+        <Domain name="list" id="4923.TopAxisLabelFontFamily.list">
+          <String text="Arial"/>
+          <String text="Courier"/>
+          <String text="Times"/>
+        </Domain>
+      </Property>
+      <Property name="TopAxisLabelFontSize" id="4923.TopAxisLabelFontSize" number_of_elements="1">
+        <Element index="0" value="12"/>
+      </Property>
+      <Property name="TopAxisLabelItalic" id="4923.TopAxisLabelItalic" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.TopAxisLabelItalic.bool"/>
+      </Property>
+      <Property name="TopAxisLabelNotation" id="4923.TopAxisLabelNotation" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="enum" id="4923.TopAxisLabelNotation.enum">
+          <Entry value="0" text="Mixed"/>
+          <Entry value="1" text="Scientific"/>
+          <Entry value="2" text="Fixed"/>
+        </Domain>
+      </Property>
+      <Property name="TopAxisLabelPrecision" id="4923.TopAxisLabelPrecision" number_of_elements="1">
+        <Element index="0" value="2"/>
+        <Domain name="range" id="4923.TopAxisLabelPrecision.range"/>
+      </Property>
+      <Property name="TopAxisLabels" id="4923.TopAxisLabels">
+        <Domain name="scalar_range" id="4923.TopAxisLabels.scalar_range"/>
+      </Property>
+      <Property name="TopAxisLogScale" id="4923.TopAxisLogScale" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.TopAxisLogScale.bool"/>
+      </Property>
+      <Property name="TopAxisRangeMaximum" id="4923.TopAxisRangeMaximum" number_of_elements="1">
+        <Element index="0" value="6.66"/>
+      </Property>
+      <Property name="TopAxisRangeMinimum" id="4923.TopAxisRangeMinimum" number_of_elements="1">
+        <Element index="0" value="0"/>
+      </Property>
+      <Property name="TopAxisTitle" id="4923.TopAxisTitle" number_of_elements="1">
+        <Element index="0" value=""/>
+      </Property>
+      <Property name="TopAxisTitleBold" id="4923.TopAxisTitleBold" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="4923.TopAxisTitleBold.bool"/>
+      </Property>
+      <Property name="TopAxisTitleColor" id="4923.TopAxisTitleColor" number_of_elements="3">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Domain name="range" id="4923.TopAxisTitleColor.range"/>
+      </Property>
+      <Property name="TopAxisTitleFontFamily" id="4923.TopAxisTitleFontFamily" number_of_elements="1">
+        <Element index="0" value="Arial"/>
+        <Domain name="list" id="4923.TopAxisTitleFontFamily.list">
+          <String text="Arial"/>
+          <String text="Courier"/>
+          <String text="Times"/>
+        </Domain>
+      </Property>
+      <Property name="TopAxisTitleFontSize" id="4923.TopAxisTitleFontSize" number_of_elements="1">
+        <Element index="0" value="12"/>
+      </Property>
+      <Property name="TopAxisTitleItalic" id="4923.TopAxisTitleItalic" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.TopAxisTitleItalic.bool"/>
+      </Property>
+      <Property name="TopAxisUseCustomLabels" id="4923.TopAxisUseCustomLabels" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.TopAxisUseCustomLabels.bool"/>
+      </Property>
+      <Property name="TopAxisUseCustomRange" id="4923.TopAxisUseCustomRange" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.TopAxisUseCustomRange.bool"/>
+      </Property>
+      <Property name="UseCache" id="4923.UseCache" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="4923.UseCache.bool"/>
+      </Property>
+      <Property name="ViewSize" id="4923.ViewSize" number_of_elements="2">
+        <Element index="0" value="1075"/>
+        <Element index="1" value="378"/>
+      </Property>
+      <Property name="ViewTime" id="4923.ViewTime" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="range" id="4923.ViewTime.range"/>
+      </Property>
+    </Proxy>
+    <ProxyCollection name="animation">
+      <Item id="263" name="AnimationScene1"/>
+      <Item id="265" name="TimeAnimationCue1"/>
+    </ProxyCollection>
+    <ProxyCollection name="layouts">
+      <Item id="4921" name="Layout #1"/>
+    </ProxyCollection>
+    <ProxyCollection name="lookup_tables">
+      <Item id="4699" name="vtkBlockColors.PVLookupTable"/>
+    </ProxyCollection>
+    <ProxyCollection name="piecewise_functions">
+      <Item id="4700" name="vtkBlockColors.PiecewiseFunction"/>
+    </ProxyCollection>
+    <ProxyCollection name="pq_helper_proxies.4485">
+      <Item id="4496" name="RepresentationAnimationHelper"/>
+    </ProxyCollection>
+    <ProxyCollection name="pq_helper_proxies.4707">
+      <Item id="4718" name="RepresentationAnimationHelper"/>
+    </ProxyCollection>
+    <ProxyCollection name="pq_helper_proxies.4995">
+      <Item id="5006" name="RepresentationAnimationHelper"/>
+    </ProxyCollection>
+    <ProxyCollection name="pq_helper_proxies.5007">
+      <Item id="5018" name="RepresentationAnimationHelper"/>
+    </ProxyCollection>
+    <ProxyCollection name="representations">
+      <Item id="4957" name="XYChartRepresentation1"/>
+      <Item id="5030" name="XYChartRepresentation2"/>
+    </ProxyCollection>
+    <ProxyCollection name="sources">
+      <Item id="4707" name="SplitImageData1"/>
+      <Item id="5007" name="SplitImageData2"/>
+      <Item id="4995" name="XY_dynamics=doublewell,x0=-0.20000000000000018,y0=0.0.asdf"/>
+      <Item id="4485" name="XY_dynamics=doublewell,x0=-1.0,y0=0.0.asdf"/>
+    </ProxyCollection>
+    <ProxyCollection name="timekeeper">
+      <Item id="259" name="TimeKeeper1"/>
+    </ProxyCollection>
+    <ProxyCollection name="views">
+      <Item id="4923" name="LineChartView1"/>
+    </ProxyCollection>
+    <CustomProxyDefinitions>
+      <CustomProxyDefinition name="I_var" group="filters">
+        <CompoundSourceProxy id="4769" servers="1">
+          <Proxy group="filters" type="GroupAttribute" id="4594" servers="1" compound_name="GroupByAttribute3">
+            <Property name="Attribute" id="4594.Attribute" number_of_elements="1">
+              <Element index="0" value="omega_Y_seed"/>
+            </Property>
+            <Property name="Class" id="4594.Class" number_of_elements="1">
+              <Element index="0" value="AttributeSplitter"/>
+            </Property>
+            <Property name="Input" id="4594.Input" number_of_elements="1">
+              <Proxy value="4571" output_port="0"/>
+              <Domain name="groups" id="4594.Input.groups"/>
+              <Domain name="input_type" id="4594.Input.input_type"/>
+            </Property>
+            <Property name="Module" id="4594.Module" number_of_elements="1">
+              <Element index="0" value="splitattr"/>
+            </Property>
+          </Proxy>
+          <Proxy group="filters" type="PythonClassAlgorithm" id="4639" servers="1" compound_name="PythonClass1">
+            <Property name="Class" id="4639.Class" number_of_elements="1">
+              <Element index="0" value="SqlFilter"/>
+            </Property>
+            <Property name="Input" id="4639.Input" number_of_elements="1">
+              <Domain name="groups" id="4639.Input.groups"/>
+              <Domain name="input_type" id="4639.Input.input_type"/>
+            </Property>
+            <Property name="Module" id="4639.Module" number_of_elements="1">
+              <Element index="0" value="sqlfilter"/>
+            </Property>
+            <Property name="Strings" id="4639.Strings" number_of_elements="2">
+              <Element index="0" value="query"/>
+              <Element index="1" value="select log(invepsilon,2), log(std, 2), * from data"/>
+            </Property>
+          </Proxy>
+          <Proxy group="filters" type="Table2Image" id="4571" servers="1" compound_name="TableToImage3">
+            <Property name="Class" id="4571.Class" number_of_elements="1">
+              <Element index="0" value="Table2Image"/>
+            </Property>
+            <Property name="Input" id="4571.Input" number_of_elements="1">
+              <Proxy value="4639" output_port="0"/>
+              <Domain name="groups" id="4571.Input.groups"/>
+              <Domain name="input_type" id="4571.Input.input_type"/>
+            </Property>
+            <Property name="Module" id="4571.Module" number_of_elements="1">
+              <Element index="0" value="table2image"/>
+            </Property>
+          </Proxy>
+          <ExposedProperties>
+            <Property name="Input" proxy_name="PythonClass1" exposed_name="Input"/>
+          </ExposedProperties>
+          <OutputPort name="Output" proxy="GroupByAttribute3" port_index="0"/>
+          <Hints>
+            <ShowInMenu/>
+          </Hints>
+        </CompoundSourceProxy>
+      </CustomProxyDefinition>
+    </CustomProxyDefinitions>
+    <Links>
+      <GlobalPropertyLink global_name="SelectionColor" proxy="4957" property="Color"/>
+      <GlobalPropertyLink global_name="SelectionColor" proxy="5030" property="Color"/>
+    </Links>
+  </ServerManagerState>
+  <InteractiveViewLinks/>
+</ParaView>

@@ -1,0 +1,33 @@
+#ASDF 1.0.0
+#ASDF_STANDARD 1.1.0
+%YAML 1.1
+%TAG ! tag:stsci.edu:asdf/
+--- !core/asdf-1.0.0
+prefix: output_dw1/dw1_
+params:
+  invepsilon:
+    start: 0
+    stop: 8
+    num: 9
+    spacing: logspace
+    base: 2
+  kappa_X: 0.5
+  kappa_Y: 1
+  sigma_X: 1
+  sigma_Y: 1
+  t0: 0.0
+  t1:
+    start: 1
+    stop: 20
+    num: 20
+    spacing: linspace
+  x0: 0.0
+  y0: 0.0
+  omega_Y_seed: 100
+    # start: 100
+    # stop: 110
+    # spacing: arange
+  omega_Y_count: 1
+  omega_X_seed: 0
+  omega_X_count: 40
+...
