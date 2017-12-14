@@ -1,0 +1,16 @@
+#ASDF 1.0.0
+#ASDF_STANDARD 1.1.0
+%YAML 1.1
+%TAG ! tag:stsci.edu:asdf/
+--- !core/asdf-1.0.0
+label: coupling_ou
+params:
+  dynamics: [ou, ou_r]
+  sigma: 1.0
+  x0: !core/ndarray-1.0.0
+    data: [-1.0, 1.0]
+  omega: !core/ndarray-1.0.0
+    data: [0, 0]
+  N: 100
+  h: 0.1
+...

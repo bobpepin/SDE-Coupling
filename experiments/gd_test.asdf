@@ -1,0 +1,18 @@
+#ASDF 1.0.0
+#ASDF_STANDARD 1.1.0
+%YAML 1.1
+%TAG ! tag:stsci.edu:asdf/
+--- !core/asdf-1.0.0
+label: gd_test
+params:
+  dynamics: gd_r
+  sigma_X: 1.0
+  sigma_Y: 1.0
+  sqrtalpha: 1
+  x0: !core/ndarray-1.0.0
+    data: [-1.0, -1.0, 0.0, 1.0, 1.0, 0.0]
+  omega: !core/ndarray-1.0.0
+    data: [0, 1, 10, 5, 0, 1]
+  N: 1000
+  h: 0.01
+...
